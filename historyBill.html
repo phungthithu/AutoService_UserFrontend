@@ -29,6 +29,11 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- css table historyBill -->
+	<link rel="stylesheet" href="css/styleTable.css">
+
 </head>
 
 <body>
@@ -41,10 +46,10 @@
 			</button>
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
 					<li class="nav-item"><a href="services.html" class="nav-link">Voucher</a></li>
-					<li class="nav-item"><a href="historyBill.html" class="nav-link">History bill</a></li>
+					<li class="nav-item active"><a href="historyBill.html" class="nav-link">History bill</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact/Service</a></li>
 				</ul>
 			</div>
@@ -86,204 +91,87 @@
 									<button class="btn btn-danger" type="button">x</button>
 								</div>
 							</div>
-						
+
 						</div>
 						<br class="cart-total">
-							<strong class="cart-total-title">Tổng Cộng: </strong></br>
-							<!-- <span class="cart-total-price">Thanh tien: </span> -->
+						<strong class="cart-total-title">Tổng Cộng: </strong></br>
+						<!-- <span class="cart-total-price">Thanh tien: </span> -->
 					</div>
 
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary close-footer">Đóng</button>
-						<a href="checkout2.html"><button type="button" class="btn btn-primary order">Thanh toán</button></a>
+						<button type="button" class="btn btn-primary order">Thanh Toán</button>
 					</div>
 				</div>
 			</div>
 	</nav>
 	<!-- END nav -->
 
-	<section class="home-slider owl-carousel">
-		<div class="slider-item" style="background-image: url(images/bg_1.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-					<div class="col-md-8 col-sm-12 text-center ftco-animate">
-						<span class="subheading">Welcome</span>
-						<h1 class="mb-4">The Best Coffee Testing Experience</h1>
-						<p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia.</p>
-						<p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
-							<!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Login </a></p> -->
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="slider-item" style="background-image: url(images/bg_2.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-					<div class="col-md-8 col-sm-12 text-center ftco-animate">
-						<span class="subheading">Welcome</span>
-						<h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
-						<p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia.</p>
-						<p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
-							<a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</a></p>
-							<!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p> -->
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="slider-item" style="background-image: url(images/bg_3.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
-					<div class="col-md-8 col-sm-12 text-center ftco-animate">
-						<span class="subheading">Welcome</span>
-						<h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
-						<p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
-							necessary regelialia.</p>
-						<p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
-							<!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p> -->
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-intro">
-		<div class="container-wrap">
-			<div class="wrap d-md-flex align-items-xl-end">
-				<div class="info">
-
-				</div>
-				<div class="book p-4">
-					<h3>Book a Table</h3>
-					<form action="#" class="appointment-form">
-						<div class="d-md-flex">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="First Name">
-							</div>
-							<div class="form-group ml-md-4">
-								<input type="text" class="form-control" placeholder="Last Name">
-							</div>
-						</div>
-						<div class="d-md-flex">
-
-							<div class="form-group ml-md-4">
-								<input type="text" class="form-control" placeholder="Phone">
-							</div>
-						</div>
-						<div class="d-md-flex">
-							<div class="form-group">
-								<textarea name="" id="" cols="30" rows="2" class="form-control"
-									placeholder="Message"></textarea>
-							</div>
-							<div class="form-group ml-md-4">
-								<input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		</div>
-	</section>
-
-
-	<section class="ftco-about d-md-flex">
-		<div class="one-half img" style="background-image: url(images/about.jpg);"></div>
-		<div class="one-half ftco-animate">
-			<div class="overlap">
-				<div class="heading-section ftco-animate ">
-					<span class="subheading">Discover</span>
-					<h2 class="mb-4">Khuyến mãi</h2>
-				</div>
-				<div>
-					<p>On her way she met a copy., made her drunk with Longe and Parole and dragged her into their
-						agency, where they abused her for their.</p>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-7 heading-section ftco-animate text-center">
-					<span class="subheading">Discover</span>
-					<h2 class="mb-4">Best Coffee Sellers</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-						live the blind texts.</p>
+					<h2 class="mb-4">History Bill</h2>
 				</div>
 			</div>
 			<div class="row owl-carousel2">
-				<button class="image-button button-left" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="image-button button-right" onclick="plusDivs(1)">&#10095;</button>
-				<div class="col-md-3 best-seller">
-					<div class="menu-entry">
-						<a href="detailProduct.html" class="img best-seller-img" style="background-image: url(images/menu-1.jpg);"></a>
-						<div class="text text-center pt-4">
-							<h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 1</a></h3>
-							<p>A small river named Duden flows by their place and supplies</p>
-							<p class="price"><span>$10.90</span></p>
-							<button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
-							<!-- <p><a href="#" class="btn btn-primary btn-outline-primary">Add to Cart</a></p> -->
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 best-seller">
-					<div class="menu-entry">
-						<a href="detailProduct.html" class="img best-seller-img" style="background-image: url(images/menu-2.jpg);"></a>
-						<div class="text text-center pt-4">
-							<h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 2</a></h3>
-							<p>A small river named Duden flows by their place and supplies</p>
-							<p class="price"><span>$9.90</span></p>
-							<button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-3 best-seller">
-					<div class="menu-entry ">
-						<a href="detailProduct.html" class="img best-seller-img" style="background-image: url(images/menu-4.jpg);"></a>
-						<div class="text text-center pt-4">
-							<h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 3</a></h3>
-							<p>A small river named Duden flows by their place and supplies</p>
-							<p class="price"><span>$8.90</span></p>
-							<button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 best-seller">
-					<div class="menu-entry">
-						<a href="detailProduct.html" class="img best-seller-img" style="background-image: url(images/menu-3.jpg);"></a>
-						<div class="text text-center pt-4">
-							<h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 4</a></h3>
-							<p>A small river named Duden flows by their place and supplies</p>
-							<p class="price"><span>$7.90</span></p>
-							<button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 best-seller">
-					<div class="menu-entry">
-						<a href="detailProduct.html" class="img best-seller-img" style="background-image: url(images/menu-4.jpg);"></a>
-						<div class="text text-center pt-4">
-							<h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 5</a></h3>
-							<p>A small river named Duden flows by their place and supplies</p>
-							<p class="price"><span>$6.90</span></p>
-							<button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
-						</div>
-					</div>
-				</div>
+				<input class="search col-md-9" type="text"  style="margin-bottom: 2rem; margin-right: 1rem; border-radius: 10px;">
+				<button class="btn btn-primary col-md-2" style="margin-bottom: 2rem;">Search</button>
+				
+
+				<table class="table">
+					<thead class="thead-primary">
+						<tr class="text-center">
+							<th>Bill Code</th>
+							<th>Date</th>
+							<th>Total Cost</th>
+							<th>Detail bill</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="text-center">
+
+							<td class="image-prod">
+								<!-- <div class="img" style="background-image:url(images/menu-2.jpg);"></div> -->
+							
+001							
+							</td>
+
+							<td class="product-name">
+								<h3>Creamy Latte Coffee</h3>
+								<!-- <p>Far far away, behind the word mountains, far from the countries</p> -->
+							</td>
+
+							<td class="price">$4.90</td>
+
+							
+
+							<td class="total"><a href="cart.html">view</a></td>
+						</tr><!-- END TR-->
+
+						<tr class="text-center">
+
+							<td class="image-prod">
+								<!-- <div class="img" style="background-image:url(images/dish-2.jpg);"></div> -->
+							002
+							</td>
+
+							<td class="product-name">
+								<h3>Grilled Ribs Beef</h3>
+								<!-- <p>Far far away, behind the word mountains, far from the countries</p> -->
+							</td>
+
+							<td class="price">$15.70</td>
+
+							
+
+							<td class="total"><a href="cart.html">view</a></td>
+						</tr><!-- END TR-->
+					</tbody>
+				</table>
+
+
 			</div>
 		</div>
 	</section>
@@ -439,7 +327,7 @@
 			$('.owl-carousel2').owlCarousel();
 		});
 	</script>
-	
+
 	<script src="js/jsstyle.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -460,6 +348,8 @@
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="js/jsCodeHistoryBill.js"></script>
 </body>
 
 </html>
