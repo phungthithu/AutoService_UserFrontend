@@ -1,15 +1,3 @@
-//login
-var modal = document.getElementById("loginform");
-var btn = document.getElementById("loginbutton");
-btn.onclick = function () {
-  modal.style.display = "block";
-}
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 // Modal
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("cart");
