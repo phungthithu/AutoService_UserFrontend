@@ -52,49 +52,94 @@
 			<button id="cart">
 				<i class="icon icon-shopping_cart" aria-hidden="true"></i>
 			</button>
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Giỏ Hàng</h5>
+			<div id="myModal" class="modal justify-content-center">
+				<div class="modal-content w-75 flex-column bg-light">
+					<section class="modal-header border-bottom-0">
 						<span class="close">&times;</span>
-					</div>
-					<div class="modal-body">
-						<div class="cart-row">
-							<span class="cart-item cart-header cart-column">Sản Phẩm</span>
-							<span class="cart-price cart-header cart-column">Giá</span>
-							<span class="cart-quantity cart-header cart-column">Số Lượng</span>
-						</div>
-						<div class="cart-items">
-							<div class="cart-row">
-								<div class="cart-item cart-column">
+					</section>
+					<section class="modal-body py-0 border-bottom-0">
+						<!-- Modal Header -->
+						<section class="cart-row p-1 px-4 bg-secondary rounded">
+							<div class="cart-item cart-header cart-column border-bottom-0">
+								<span class="align-middle">Sản Phẩm</span>
+							</div>
+							<div class="cart-price cart-header cart-column border-bottom-0">
+								<span class="align-middle">Giá</span>
+							</div>
+							<div class="cart-quantity cart-header cart-column border-bottom-0">
+								<span class="align-middle">Số Lượng</span>
+							</div>
+							<div class="cart-item-title cart-header cart-column border-bottom-0">
+								<span class="align-middle">Xóa</span>
+							</div>
+						</section>
+						<!-- Modal Body -->
+						<section class="cart-items">
+							<div class="cart-row p-2 px-4 border-bottom">
+								<div class="cart-item cart-column border-bottom-0">
 									<img class="cart-item-image" src="images/drink-1.jpg" width="100" height="100">
-									<span class="cart-item-title">Nuoc 1</span>
+									<div class="cart-item-title ml-3">
+										<div class="d-flex font-weight-bold">Nuoc 2</div>
+										<div class="d-flex text-muted h6">Category: Cà phê</div>
+									</div>
 								</div>
-								<span class="cart-price cart-column">25000đ</span>
-								<div class="cart-quantity cart-column">
+								<div class="cart-price cart-column h6 border-bottom-0">25000đ</div>
+								<div class="cart-quantity cart-column border-bottom-0">
 									<input class="cart-quantity-input" type="number" value="1">
+								</div>
+								<div class="cart-item-title cart-column border-bottom-0">
 									<button class="btn btn-danger" type="button">x</button>
 								</div>
 							</div>
-							<div class="cart-row">
-								<div class="cart-item cart-column">
+							<div class="cart-row p-2 px-4 border-bottom">
+								<div class="cart-item cart-column border-bottom-0">
 									<img class="cart-item-image" src="images/drink-2.jpg" width="100" height="100">
-									<span class="cart-item-title">Nuowsc 2</span>
+									<div class="cart-item-title ml-3">
+										<div class="d-flex font-weight-bold">Nuoc 2</div>
+										<div class="d-flex text-muted h6">Category: Cà phê</div>
+									</div>
 								</div>
-								<span class="cart-price cart-column">15000đ</span>
-								<div class="cart-quantity cart-column">
-									<input class="cart-quantity-input" type="number" value="2">
+								<div class="cart-price cart-column h6 border-bottom-0">25000đ</div>
+								<div class="cart-quantity cart-column border-bottom-0">
+									<input class="cart-quantity-input" type="number" value="1">
+								</div>
+								<div class="cart-item-title cart-column border-bottom-0">
 									<button class="btn btn-danger" type="button">x</button>
 								</div>
 							</div>
-						
-						</div>
-						<br class="cart-total">
-							<strong class="cart-total-title">Tổng Cộng: </strong></br>
-							<!-- <span class="cart-total-price">Thanh tien: </span> -->
-					</div>
-
-					<div class="modal-footer">
+							<div class="cart-row p-2 px-4 border-bottom">
+								<div class="cart-item cart-column border-bottom-0">
+									<img class="cart-item-image" src="images/drink-3.jpg" width="100" height="100">
+									<div class="cart-item-title ml-3">
+										<div class="d-flex font-weight-bold">Nuoc 3</div>
+										<div class="d-flex text-muted h6">Category: Cà phê</div>
+									</div>
+								</div>
+								<div class="cart-price cart-column h6 small border-bottom-0">25000đ</div>
+								<div class="cart-quantity cart-column border-bottom-0">
+									<input class="cart-quantity-input" type="number" value="1">
+								</div>
+								<div class="cart-item-title cart-column border-bottom-0">
+									<button class="btn btn-danger" type="button">x</button>
+								</div>
+							</div>
+						</section>
+						<section class="cart-items border-bottom-0">
+							<div class="cart-row p-2 px-4 border-bottom">
+								<div class="cart-item cart-column border-bottom-0">
+									<span class="cart-total-title">Tổng Cộng</span>
+								</div>
+								<div class="cart-price cart-total-price cart-column h6 border-bottom-0"></div>
+								<div class="cart-quantity cart-column border-bottom-0">
+									<span style="color: white;">hide</span>
+								</div>
+								<div class="cart-item-title cart-column border-bottom-0">
+									<span style="color: white;">hide</span>
+								</div>
+							</div>
+						</section>
+					</section>
+					<div class="modal-footer border-top-0">
 						<button type="button" class="btn btn-secondary close-footer">Đóng</button>
 						<a href="checkout2.html"><button type="button" class="btn btn-primary order">Thanh toán</button></a>
 					</div>
@@ -232,6 +277,7 @@
 					<div class="menu-entry">
 						<a href="detailProduct.html" class="img best-seller-img" style="background-image: url(images/menu-1.jpg);"></a>
 						<div class="text text-center pt-4">
+							<span class="invisible product-category">Coffee</span>
 							<h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 1</a></h3>
 							<p>A small river named Duden flows by their place and supplies</p>
 							<p class="price"><span>$10.90</span></p>
