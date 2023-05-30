@@ -189,7 +189,6 @@ input {
 
 .container.right-panel-active .overlay {
   	transform: translateX(50%);
-    
 }
 
 .overlay-panel {
@@ -211,7 +210,15 @@ input {
     height: 530px;
     overflow: hidden;
 }
+#signIn, #signUp{
+	--transition-second: 0.4s;
+	transition: var(--transition-second);
+}
 
+#signUp:hover, #signIn:hover{
+	background-color: #FFFFFF;
+	color: #222;
+}
 .overlay-left {
 	transform: translateX(-20%);
 }
