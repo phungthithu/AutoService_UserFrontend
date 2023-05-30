@@ -28,8 +28,9 @@ for (var i = 0; i < add_cart.length; i++) {
   add.addEventListener("click", function (event) {
 
     var button = event.target;
+    console.log(button);
     var product = button.parentElement.parentElement;
-    var img = product.parentElement.getElementsByClassName("best-seller-img")[0];
+    var img = product.parentElement.getElementsByClassName("prodcut-img")[0];
     var style = window.getComputedStyle(img);
     var backgroundImage = style.getPropertyValue("background-image");
     var imgUrl = backgroundImage.slice(4,-1).replace(/"/g, "");
