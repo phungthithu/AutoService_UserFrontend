@@ -13384,7 +13384,7 @@ textarea.form-control {
 
 /* Sao */
 div.stars {
-  width: 135px;
+  width: 190px;
   display: inline-block;
   padding-left: 0;
   padding-right: 0;
@@ -13397,7 +13397,7 @@ input.star {
 label.star {
   float: right;
   padding: 5px;
-  font-size: 15px;
+  font-size: 30px;
   color: #444;
   transition: all .2s;
 }

@@ -30,7 +30,8 @@
       {
         "duplicate-id-aria": "off"
       }
-    ]
+    ],
+    "meta-viewport": "off"
   },
   "browserslist": [
     "defaults",
