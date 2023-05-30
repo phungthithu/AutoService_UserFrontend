@@ -13485,7 +13485,7 @@ label.star:before {
 .cart-column {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   margin-right: 1.5em;
   padding-bottom: 10px;
   margin-top: 10px;
@@ -13546,9 +13546,9 @@ label.star:before {
   margin-right: 25px;
 }
 
-.cart-row:last-child {
+/* .cart-row:last-child {
   border-bottom: 1px solid black;
-}
+} */
 
 .cart-row:last-child .cart-column {
   border: none;
@@ -13684,21 +13684,6 @@ h5.modal-title {
 
 #cart:hover {
   border-color: #fff;
-}
-/* cart */
-.cart-header {
-  font-weight: bold;
-  font-size: 1.25em;
-  color: #333;
-}
-
-.cart-column {
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid black;
-  margin-right: 1.5em;
-  padding-bottom: 10px;
-  margin-top: 10px;
 }
 
 .cart-row {

@@ -4,9 +4,13 @@ var btn = document.getElementById("cart");
 var close = document.getElementsByClassName("close")[0];
 var close_footer = document.getElementsByClassName("close-footer")[0];
 var order = document.getElementsByClassName("order")[0];
-btn.onclick = function () {
+btn.addEventListener("click", function() {
+  //display the modal
   modal.style.display = "block";
-}
+  //calculate total amount at the same time
+  updatecart();
+});
+
 close.onclick = function () {
   modal.style.display = "none";
 }
@@ -50,7 +54,7 @@ for (var i = 0; i < add_cart.length; i++) {
 
 function addItemToCart(title, price, img) {
   var cartRow = document.createElement('div')
-  cartRow.classList.add('cart-row')
+  cartRow.classList.add('cart-row', 'border-bottom')
   var cartItems = document.getElementsByClassName('cart-items')[0]
   var cart_title = cartItems.getElementsByClassName('cart-item-title')
   for (var i = 0; i < cart_title.length; i++) {
@@ -110,7 +114,7 @@ function updatecart() {
     var quantity = quantity_item.value // lấy giá trị trong thẻ input
     total = total + (price * quantity)
   }
-  document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
+  document.getElementsByClassName("cart-total-price")[0].innerText = total + ' VNĐ'
   // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
 }
 // thay đổi số lượng sản phẩm
