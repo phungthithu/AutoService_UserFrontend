@@ -11184,7 +11184,6 @@ h5,
 }
 
 .ftco-intro .wrap .book {
-  width: 35%;
   background: #c49b63;
 }
 
@@ -13678,12 +13677,8 @@ h5.modal-title {
 #cart {
   font-size: 20px;
   color: #fff;
-  background: #c49b63;
+  background: transparent;
   border: 1px solid transparent;
-  /* border-radius: 10px; */
-  /* outline: none; */
-  /* margin-left: 1rem; */
-  /* padding: 12px; */
   cursor: pointer;
 }
 
