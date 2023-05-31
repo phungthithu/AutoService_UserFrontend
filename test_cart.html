@@ -55,94 +55,78 @@
             </button>
             <!-- Cart section -->
             <div id="myModal" class="modal bg-transparent pt-5" style="z-index: 100;">
-                <div class="container cart bg-transparent">
+                <div class="container cart bg-transparent p-0">
                     <div class="row no-gutters justify-content-center">
                         <div class="col-md-10 col-sm p-4 bg-light rounded">
                             <div class="cart-header d-flex pl-2 pb-0 justify-content-between">
                                 <div class="font-weight-bold d-flex align-items-center">
                                     <span>
-                                        Bạn có <span class="cart-quantity">4</span> <span class="text-danger">sản phẩm</span> trong Order
+                                        Bạn có <span class="cart-quantity text-muted">4</span> <span class="text-muted">sản phẩm</span> trong Order
                                     </span>
                                 </div>
                                 <span class="close">
-                                    <button type="button" class="btn btn-danger">&#9932</button>
+                                    <button type="button" class="btn btn-outline-danger font-weight-bold">&#9932</button>
                                 </span>
                             </div>
-                            <div class="cart-body">
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                    <div class="d-flex flex-row text-muted">
-                                       <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="d-block"></span>
-                                        <span class="d-block ml-5 font-weight-bold">$900</span>
-                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                    </div>
+                            <div class="cart-total d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded rounded">
+                                <div class="d-flex flex-row text-muted">
+                                   <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="d-block"></span>
+                                    <span class="d-block ml-5 font-weight-bold">
+                                        $<span class="total-price">900</span>
+                                    </span>
+                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                </div>
+                            </div>
+                            <div class="cart-body">
+                                <div class="cart-item d-flex justify-content-between align-items-center mt-3 p-2 rounded">
                                     <div class="d-flex flex-row">
                                         <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
                                         <div class="ml-2">
-                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                            <span class="cart-item-title text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center">
                                         <span class="quantity-input">
-                                            <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+                                            <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
                                                 <i class="icon-minus"></i>
                                             </button>
-                                            <input class="cart-quantity-input text-muted font-weight-bold" type="number" value="2">
-                                            <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+                                            <input class="cart-quantity-input text-muted font-weight-bold rounded" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn btn-light" onclick="ChangeQuantity(event);">
                                                 <i class="icon-plus"></i>
                                             </button>
                                         </span>
-                                        <span class="d-block px-4 font-weight-bold">$900</span>
+                                        <span class="d-block px-4 font-weight-bold">$<span class="item-price">900</span></span>
                                         <span class="remove-item">
                                             <i class="icon-trash mr-2 h5 text-black-50"></i>
                                         </span>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                <div class="cart-item d-flex justify-content-between align-items-center mt-3 p-2 rounded">
                                     <div class="d-flex flex-row">
                                         <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
                                         <div class="ml-2">
-                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                            <span class="cart-item-title text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="d-block">2</span>
-                                        <span class="d-block ml-5 font-weight-bold">$900</span>
-                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                    <div class="d-flex flex-row">
-                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                        <div class="ml-2">
-                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="d-block">2</span>
-                                        <span class="d-block ml-5 font-weight-bold">$900</span>
-                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                    <div class="d-flex flex-row">
-                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                        <div class="ml-2">
-                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="d-block">2</span>
-                                        <span class="d-block ml-5 font-weight-bold">$900</span>
-                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                        <span class="quantity-input">
+                                            <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                            <input class="cart-quantity-input text-muted font-weight-bold rounded" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn btn-light" onclick="ChangeQuantity(event);">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="d-block px-4 font-weight-bold">$<span class="item-price">900</span></span>
+                                        <span class="remove-item">
+                                            <i class="icon-trash mr-2 h5 text-black-50"></i>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +148,6 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
                         <span class="subheading">Welcome</span>
                         <h1 class="mb-4">The Best Coffee Testing Experience</h1>
@@ -172,82 +155,22 @@
                             necessary regelialia.</p>
                         <p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
                             <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</button>
-
-                            <!-- <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3" id="loginbutton">Log
-								in</button> -->
-                            <!-- <div class="login-form" id="loginform">
-							<h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
-							<div class="container" id="container login">
-								<div class="form-container sign-up-container">
-									<form action="#">
-										<h1>Create Account</h1>
-										<div class="social-container">
-											<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-											<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-											<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-										</div>
-										<span>or use your email for registration</span>
-										<input type="text" placeholder="Name" />
-										<input type="email" placeholder="Email" />
-										<input type="password" placeholder="Password" />
-										<button>Sign Up</button>
-									</form>
-								</div>
-								<div class="form-container sign-in-container">
-									<form action="#">
-										<h1>Sign in</h1>
-										<div class="social-container">
-											<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-											<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-										</div>
-										<span>or use your account</span>
-										<input type="email" placeholder="Email" />
-										<input type="password" placeholder="Password" />
-										<a href="#">Forgot your password?</a>
-										<button>Sign In</button>
-									</form>
-								</div>
-								<div class="overlay-container">
-									<div class="overlay">
-										<div class="overlay-panel overlay-left">
-											<h1>Welcome Back!</h1>
-											<p>To keep connected with us please login with your personal info</p>
-											<button class="ghost" id="signIn">Sign In</button>
-										</div>
-										<div class="overlay-panel overlay-right">
-											<h1>Hello, Friend!</h1>
-											<p>Enter your personal details and start journey with us</p>
-											<button class="ghost" id="signUp">Sign Up</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div> -->
-
-
-                            <!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Login </a></p> -->
                     </div>
-
                 </div>
             </div>
         </div>
-
         <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
                         <span class="subheading">Welcome</span>
                         <h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
                         <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
                             necessary regelialia.</p>
-                        <p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
-                            <!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</a></p> -->
+                            <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
                             <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</button>
-                            <!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p> -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -256,17 +179,14 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
-
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
                         <span class="subheading">Welcome</span>
                         <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
                         <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
                             necessary regelialia.</p>
-                        <p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
+                        <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
                             <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</button>
-                            <!-- <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p> -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -317,62 +237,62 @@
             <div class="row owl-carousel">
                 <div class="col-md-3 best-seller">
                     <div class="menu-entry">
-                        <a href="detailProduct.html" class="img prodcut-img"
+                        <a href="detailProduct.html" class="img product-img"
                             style="background-image: url(images/menu-1.jpg);"></a>
                         <div class="text text-center pt-4">
                             <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 1</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
-                            <p class="price"><span>$10.90</span></p>
-                            <button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="add-to-cart btn btn-primary btn-outline-primary">Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 best-seller">
                     <div class="menu-entry">
-                        <a href="detailProduct.html" class="img prodcut-img"
+                        <a href="detailProduct.html" class="img product-img"
                             style="background-image: url(images/menu-2.jpg);"></a>
                         <div class="text text-center pt-4">
                             <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 2</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
-                            <p class="price"><span>$9.90</span></p>
-                            <button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-3 best-seller">
                     <div class="menu-entry ">
-                        <a href="detailProduct.html" class="img prodcut-img"
+                        <a href="detailProduct.html" class="img product-img"
                             style="background-image: url(images/menu-4.jpg);"></a>
                         <div class="text text-center pt-4">
                             <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 3</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
-                            <p class="price"><span>$8.90</span></p>
-                            <button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 best-seller">
                     <div class="menu-entry">
-                        <a href="detailProduct.html" class="img prodcut-img"
+                        <a href="detailProduct.html" class="img product-img"
                             style="background-image: url(images/menu-3.jpg);"></a>
                         <div class="text text-center pt-4">
                             <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 4</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
-                            <p class="price"><span>$7.90</span></p>
-                            <button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 best-seller">
                     <div class="menu-entry">
-                        <a href="detailProduct.html" class="img prodcut-img"
+                        <a href="detailProduct.html" class="img product-img"
                             style="background-image: url(images/menu-4.jpg);"></a>
                         <div class="text text-center pt-4">
                             <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 5</a></h3>
                             <p>A small river named Duden flows by their place and supplies</p>
-                            <p class="price"><span>$6.90</span></p>
-                            <button type="button" class="btn btn-primary btn-outline-primary">Add to Cart</button>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -403,135 +323,10 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6 mb-5 mb-md-5">
-				<div class="ftco-footer-widget mb-4">
-				  <h2 class="ftco-heading-2">Recent Blog</h2>
-				  <div class="block-21 mb-4 d-flex">
-					<a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-					<div class="text">
-					  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-					  <div class="meta">
-						<div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
-						<div><a href="#"><span class="icon-person"></span> Admin</a></div>
-						<div><a href="#"><span class="icon-chat"></span> 19</a></div>
-					  </div>
-					</div>
-				  </div>
-				  <div class="block-21 mb-4 d-flex">
-					<a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-					<div class="text">
-					  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-					  <div class="meta">
-						<div><a href="#"><span class="icon-calendar"></span> Sept 15, 2018</a></div>
-						<div><a href="#"><span class="icon-person"></span> Admin</a></div>
-						<div><a href="#"><span class="icon-chat"></span> 19</a></div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			  </div>
-
-				<div class="col-lg-6 col-md-6 mb-5 mb-md-5">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Questions?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li>
-									<span class="icon-clock-o"></span> <span class="text">
-										<h3>Open Monday-Friday</h3>
-										<p>8:00am - 9:00pm</p>
-									</span>
-								</li>
-								<li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
-										View, San Francisco, California, USA</span></li>
-								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
-											210</span></a></li>
-								<li><a href="#"><span class="icon icon-envelope"></span><span
-											class="text">info@yourdomain.com</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                <!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
             </div>
         </div>
         </div>
     </footer>
-    <!-- <script>
-		const image = document.getElementsByClassName('img');
-		function moveImage() {
-			const currentLeft = parseInt(image.style.left) || 0;
-			const newLeft = currentLeft + 10;
-			image.style.left = newLeft + 'px';
-
-			requestAnimationFrame(moveImage);
-		}
-		moveImage();
-	</script> -->
-
-    <!-- chuyển ảnh -->
-    <!-- <script>
-		var img;
-		function showImages() {
-			var i;
-			var images = document.getElementsByClassName("img");
-			var dots = document.getElementsByClassName("dot");
-			for (i = 0; i < images.length; i++) {
-				images[i].style.display = "none";
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-
-			images[img].style.display = "block";
-			dots[img].className += " active";
-			slideIndex++;
-			if (img > images.length - 1) {
-				img = 0
-			}
-			setTimeout(showImages, 5000);
-		}
-		showImages(img = 0);
-
-
-		function currentImages(n) {
-			showImages(img = n);
-		}
-	</script> -->
-
-    <!-- <script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-			showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
-			var i;
-			var x = document.getElementsByClassName("menu-entry");
-			if (n > x.length) { slideIndex = 1 }
-			if (n < 1) { slideIndex = x.length }
-			for (i = 4; i < x.length; i++) {
-				x[i].style.display = "none";
-			}
-			x[slideIndex - 1].style.display = "inline-block";
-		}
-
-	</script> -->
-    <script>
-		// $(document).ready(function () {
-		// 	$('.owl-carousel2').owlCarousel();
-		// });
-    </script>
-
     <script>
         const signUpButton = document.getElementById('signUp');
         const signInButton = document.getElementById('signIn');
@@ -545,8 +340,7 @@
             container.classList.remove("right-panel-active");
         });
     </script>
-
-    <script src="js/jsstyle.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -566,5 +360,4 @@
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>
