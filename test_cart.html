@@ -54,11 +54,11 @@
                 <i class="icon icon-shopping_cart" aria-hidden="true"></i>
             </button>
             <!-- Cart section -->
-            <div id="myModal" class="modal bg-transparent" style="z-index: 100;">
+            <div id="myModal" class="modal bg-transparent pt-5" style="z-index: 100;">
                 <div class="container cart bg-transparent">
                     <div class="row no-gutters justify-content-center">
-                        <div class="col-8 p-4 bg-light rounded">
-                            <div class="d-flex p-2 pb-0 justify-content-between">
+                        <div class="col-md-10 col-sm p-4 bg-light rounded">
+                            <div class="cart-header d-flex pl-2 pb-0 justify-content-between">
                                 <div class="font-weight-bold d-flex align-items-center">
                                     <span>
                                         Bạn có <span class="cart-quantity">4</span> <span class="text-danger">sản phẩm</span> trong Order
@@ -68,70 +68,88 @@
                                     <button type="button" class="btn btn-danger">&#9932</button>
                                 </span>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                <div class="d-flex flex-row text-muted">
-                                   <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
-                                </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <span class="d-block"></span>
-                                    <span class="d-block ml-5 font-weight-bold">$900</span>
-                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                <div class="d-flex flex-row">
-                                    <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                    <div class="ml-2">
-                                    <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                    <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                            <div class="cart-body">
+                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                    <div class="d-flex flex-row text-muted">
+                                       <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="d-block"></span>
+                                        <span class="d-block ml-5 font-weight-bold">$900</span>
+                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
                                     </div>
                                 </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <span class="d-block">2</span>
-                                    <span class="d-block ml-5 font-weight-bold">$900</span>
-                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                <div class="d-flex flex-row">
-                                    <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                    <div class="ml-2">
-                                    <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                    <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                    <div class="d-flex flex-row">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div class="ml-2">
+                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="quantity-input">
+                                            <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                            <input class="cart-quantity-input text-muted font-weight-bold" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="d-block px-4 font-weight-bold">$900</span>
+                                        <span class="remove-item">
+                                            <i class="icon-trash mr-2 h5 text-black-50"></i>
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <span class="d-block">2</span>
-                                    <span class="d-block ml-5 font-weight-bold">$900</span>
-                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                <div class="d-flex flex-row">
-                                    <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                    <div class="ml-2">
-                                    <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                    <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                    <div class="d-flex flex-row">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div class="ml-2">
+                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="d-block">2</span>
+                                        <span class="d-block ml-5 font-weight-bold">$900</span>
+                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
                                     </div>
                                 </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <span class="d-block">2</span>
-                                    <span class="d-block ml-5 font-weight-bold">$900</span>
-                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
-                                <div class="d-flex flex-row">
-                                    <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                    <div class="ml-2">
-                                    <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                    <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                    <div class="d-flex flex-row">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div class="ml-2">
+                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="d-block">2</span>
+                                        <span class="d-block ml-5 font-weight-bold">$900</span>
+                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
                                     </div>
                                 </div>
-                                <div class="d-flex flex-row align-items-center">
-                                    <span class="d-block">2</span>
-                                    <span class="d-block ml-5 font-weight-bold">$900</span>
-                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                <div class="d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded">
+                                    <div class="d-flex flex-row">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div class="ml-2">
+                                        <span class="text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                        <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="d-block">2</span>
+                                        <span class="d-block ml-5 font-weight-bold">$900</span>
+                                        <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <div class="d-flex justify-content-end align-items-center mt-3 rounded">
+                                    <button type="button" class="btn btn-secondary close-footer font-weight-bold">Đóng</button>
+                                    <button type="button" class="ml-2 btn btn-primary order">Thanh Toán</button>
                                 </div>
                             </div>
                         </div>
@@ -253,10 +271,9 @@
             </div>
         </div>
     </section>
-
     <div class="container-wrap ftco-intro position-fixed" style="bottom: 0; right: 0; z-index:10;">
         <div class="wrap d-md-flex align-items-xl-end">
-            <!-- <div class="book p-3" style="border-top-left-radius: 0.25em;">
+            <div class="book p-3" style="border-top-left-radius: 0.25em;">
                 <h3>Book a Table</h3>
                 <form action="#" class="appointment-form">
                     <div class="d-md-flex">
@@ -268,7 +285,7 @@
                         </div>
                     </div>
                 </form>
-            </div> -->
+            </div>
         </div>
     </div>
 
