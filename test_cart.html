@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Coffee - Free Bootstrap 4 Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Coffee<small>Blend</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Voucher</a></li>
+                    <li class="nav-item"><a href="historyBill.html" class="nav-link">History bill</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact/Service</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <button id="cart">
+                <i class="icon icon-shopping_cart" aria-hidden="true"></i>
+            </button>
+            <!-- Cart section -->
+            <div id="myModal" class="modal bg-transparent pt-5" style="z-index: 100;">
+                <div class="container cart bg-transparent p-0">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 col-sm p-4 bg-light rounded">
+                            <div class="cart-header d-flex pl-2 pb-0 justify-content-between">
+                                <div class="font-weight-bold d-flex align-items-center">
+                                    <span>
+                                        Bạn có <span class="cart-quantity text-muted">4</span> <span class="text-muted">sản phẩm</span> trong Order
+                                    </span>
+                                </div>
+                                <span class="close">
+                                    <button type="button" class="btn btn-outline-danger font-weight-bold">&#9932</button>
+                                </span>
+                            </div>
+                            <div class="cart-total d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded rounded">
+                                <div class="d-flex flex-row text-muted">
+                                   <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="d-block"></span>
+                                    <span class="d-block ml-5 font-weight-bold">
+                                        $<span class="total-price">900</span>
+                                    </span>
+                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                </div>
+                            </div>
+                            <div class="cart-body">
+                                <div class="cart-item d-flex justify-content-between align-items-center mt-3 p-2 rounded">
+                                    <div class="d-flex flex-row">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div class="ml-2">
+                                            <span class="cart-item-title text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="quantity-input">
+                                            <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                            <input class="cart-quantity-input text-muted font-weight-bold rounded" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn btn-light" onclick="ChangeQuantity(event);">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="d-block px-4 font-weight-bold">$<span class="item-price">900</span></span>
+                                        <span class="remove-item">
+                                            <i class="icon-trash mr-2 h5 text-black-50"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="cart-item d-flex justify-content-between align-items-center mt-3 p-2 rounded">
+                                    <div class="d-flex flex-row">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div class="ml-2">
+                                            <span class="cart-item-title text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <span class="quantity-input">
+                                            <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                            <input class="cart-quantity-input text-muted font-weight-bold rounded" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn btn-light" onclick="ChangeQuantity(event);">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="d-block px-4 font-weight-bold">$<span class="item-price">900</span></span>
+                                        <span class="remove-item">
+                                            <i class="icon-trash mr-2 h5 text-black-50"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <div class="d-flex justify-content-end align-items-center mt-3 rounded">
+                                    <button type="button" class="btn btn-secondary close-footer font-weight-bold">Đóng</button>
+                                    <button type="button" class="ml-2 btn btn-primary order">Thanh Toán</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                    <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Welcome</span>
+                        <h1 class="mb-4">The Best Coffee Testing Experience</h1>
+                        <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
+                            necessary regelialia.</p>
+                        <p><a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
+                            <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                    <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Welcome</span>
+                        <h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
+                        <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
+                            necessary regelialia.</p>
+                            <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
+                            <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+                    <div class="col-md-8 col-sm-12 text-center ftco-animate">
+                        <span class="subheading">Welcome</span>
+                        <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
+                        <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the
+                            necessary regelialia.</p>
+                        <a href="menu.html" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Order Now</a>
+                            <button class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Log in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-wrap ftco-intro position-fixed" style="bottom: 0; right: 0; z-index:10;">
+        <div class="wrap d-md-flex align-items-xl-end">
+            <div class="book p-3" style="border-top-left-radius: 0.25em;">
+                <h3>Book a Table</h3>
+                <form action="#" class="appointment-form">
+                    <div class="d-md-flex">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Table Code">
+                        </div>
+                        <div class="form-group ml-md-4">
+                            <input type="submit" value="Select" class="btn btn-white py-3 px-4">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="ftco-about d-md-flex">
+        <div class="one-half img" style="background-image: url(images/about.jpg);"></div>
+        <div class="one-half ftco-animate">
+            <div class="overlap">
+                <div class="heading-section ftco-animate ">
+                    <span class="subheading">Discover</span>
+                    <h2 class="mb-4">Khuyến mãi</h2>
+                </div>
+                <div>
+                    <p>On her way she met a copy., made her drunk with Longe and Parole and dragged her into their
+                        agency, where they abused her for their.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <span class="subheading">Discover</span>
+                    <h2 class="mb-4">Best Coffee Sellers</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+            <div class="row owl-carousel">
+                <div class="col-md-3 best-seller">
+                    <div class="menu-entry">
+                        <a href="detailProduct.html" class="img product-img"
+                            style="background-image: url(images/menu-1.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 1</a></h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="add-to-cart btn btn-primary btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 best-seller">
+                    <div class="menu-entry">
+                        <a href="detailProduct.html" class="img product-img"
+                            style="background-image: url(images/menu-2.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 2</a></h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 best-seller">
+                    <div class="menu-entry ">
+                        <a href="detailProduct.html" class="img product-img"
+                            style="background-image: url(images/menu-4.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 3</a></h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 best-seller">
+                    <div class="menu-entry">
+                        <a href="detailProduct.html" class="img product-img"
+                            style="background-image: url(images/menu-3.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 4</a></h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 best-seller">
+                    <div class="menu-entry">
+                        <a href="detailProduct.html" class="img product-img"
+                            style="background-image: url(images/menu-4.jpg);"></a>
+                        <div class="text text-center pt-4">
+                            <h3 class="content-product-h3"><a href="detailProduct.html">Coffee Capuccino 5</a></h3>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <p>$<span class="price">8.90</span></p>
+                            <button type="button" class="btn btn-primary btn-outline-primary add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+    <footer class="ftco-footer ftco-section img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-6 mb-5 mb-md-5">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About Us</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+    <script src="js/cart.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
