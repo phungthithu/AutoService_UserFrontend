@@ -601,9 +601,11 @@ pre code {
     max-width: 540px;
   }
 }
+
 .ftco-section .container {
   display: inline-block;
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -11441,50 +11443,52 @@ h5,
   background: url(../images/bg_4.jpg) no-repeat fixed;
   font-size: 16px;
 }
+
 @media (max-width: 767.98px) {
-  .best-seller{
-display: flex;
-height: 450px;
-width: 270px;
+  .best-seller {
+    display: flex;
+    height: 450px;
+    width: 270px;
   }
+
   .menu-entry {
     margin-bottom: 30px;
     padding: 0;
     display: block;
   }
-  
+
   .menu-entry .img {
     display: block;
   }
-  
+
   .menu-entry .text h3 {
     font-size: 18px;
     text-transform: uppercase;
   }
-  
+
   .menu-entry .text h3 a {
     color: #fff;
   }
-  
+
   .menu-entry .text .price span {
     color: #fff;
     font-size: 18px;
   }
-  
+
   .product-details h3 {
     text-transform: uppercase;
     font-size: 34px;
   }
-  
+
   .product-details .price span {
     font-size: 30px;
     color: #f8b500;
   }
-  
+
   .product-details button i {
     color: #c49b63;
   }
-  
+
 }
 
 .menu-entry {
@@ -13428,23 +13432,50 @@ label.star:before {
 
 /* Thanh cuộn nơi feedback */
 .testimony::-webkit-scrollbar {
-  width: 14px;     
+  width: 14px;
   width: 0 !important;
-  display: none;          /* Chiều rộng vùng chứa scrollbar */
+  display: none;
+  /* Chiều rộng vùng chứa scrollbar */
 }
 
-.button-left{left:1%; font-size:20px}
-.button-right{right:1%; font-size:20px }
-.image-button{border:none;display:inline-block;padding:10px;height:50px;vertical-align:middle;overflow:hidden; color:#fff;background:#000;position:absolute;top:calc(50% - 25px); opacity:0.5;}
-.image-button:hover{color:#000;background:#ccc;}
+.button-left {
+  left: 1%;
+  font-size: 20px
+}
+
+.button-right {
+  right: 1%;
+  font-size: 20px
+}
+
+.image-button {
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #fff;
+  background: #000;
+  position: absolute;
+  top: calc(50% - 25px);
+  opacity: 0.5;
+}
+
+.image-button:hover {
+  color: #000;
+  background: #ccc;
+}
 
 .menu-entry {
   display: inline-block;
   position: relative;
 }
-.best-seller{
+
+.best-seller {
   display: inline-block;
 }
+
 /* .dot {
   cursor:pointer;
   height: 13px;
@@ -13768,6 +13799,7 @@ h5.modal-title {
   color: black;
   margin-right: 20px;
 }
+
 .content-nav form button {
   padding: 5px;
   border-radius: 12px;
@@ -13778,3 +13810,144 @@ h5.modal-title {
   outline: none;
   background: #fff;
 }
+
+
+
+/* Coupon */
+.coupon-section .container {
+  width: 600px;
+  /* height: 100vh; */
+  /* background: #c49b63; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+}
+
+.coupon-section .coupon-card {
+  /* width: 600px; */
+  height: 200px;
+  background: linear-gradient(135deg, #c49b63, #c49b63);
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+
+}
+
+.coupon-section .coupon-card h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.coupon-section .coupon-card h5 {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.coupon-section .condition-title{
+  margin-bottom: 30px;
+}
+
+.coupon-section .coupon-card p {
+  font-size: 15px;
+  /* display: inline-block; */
+  padding-right: 40px;
+  padding-left: 40px;
+
+}
+.coupon-section .discount h2 {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.coupon-section .discount .subheading {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.coupon-section .date-valid {
+  /* display: flex; */
+  margin-top: 20px;
+}
+
+.coupon-section .coupon-row {
+  display: flex;
+  align-items: center;
+  margin: 25px auto;
+  width: fit-content;
+
+}
+
+/* .coupon-section #cpnCode {
+  border: 1px dashed #fff;
+  padding: 10px 20px;
+  border-right: 0;
+  font-weight: 400;
+
+} */
+
+.coupon-section #cpnBtn {
+  font-weight: 600;
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 10px 20px;
+  color: #7158fe;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .coupon-section .container {
+    /* min-width: 400px; */
+    /* max-width: 700px; */
+  }
+  .coupon-section .container .coupon-card {
+    /* margin: 0; */
+    /* min-width: 400px; */
+    /* max-width: 600px; */
+  }
+  .coupon-section .coupon-card .discount {
+    /* min-width: 100px; */
+    max-width: 120px;
+  }
+  .coupon-section .coupon-card .condition {
+    /* min-width: 200px; */
+    max-width: 230px;
+    /* padding: 10px; */
+    /* padding-left: 15px; */
+  }
+  
+  .coupon-section .coupon-card h3 {
+    font-size: 15px;
+  }
+  .coupon-section .coupon-card h5 {
+    /* font-size: 10px; */
+  }
+  
+  .coupon-section .coupon-card p {
+    font-size: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline;
+  
+  }
+  .coupon-section .discount .subheading {
+    font-size: 30px;
+  }
+  
+  .coupon-section #cpnBtn {
+    /* padding: 10px 10px; */
+    padding: 10px 10px;
+    font-size: 13.5px;
+    /* padding: 0; */
+  }
+}
+
