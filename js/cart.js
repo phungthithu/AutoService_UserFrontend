@@ -1,17 +1,23 @@
-// Modal
-let cartModal = document.getElementById("myModal");
-let cartButton = document.getElementById("cart");
+// Modal Button section
+let cartButton = document.getElementById("cartButton");
 let closeButton = document.getElementsByClassName("close")[0];
-let close_footer = document.getElementsByClassName("close-footer")[0];
+// Modal components section
+let cartModal = document.getElementById("cartModal");
+let cartHeader = cartModal.getElementsByClassName("header-message")[0];
+let cartBody = cartModal.getElementsByClassName("cart-body")[0];
+let cartFooter = cartModal.getElementsByClassName("cart-footer")[0];
+let cartCloseFooter = document.getElementsByClassName("close-footer")[0];
 let orderButton = document.getElementsByClassName("order")[0];
-let cartQuantity = document.getElementsByClassName("cart-quantity")[0];
-let cartTotalPrice = document.getElementsByClassName("total-price")[0];
-let  quantityPlus = "quantity-right-plus";
+// Cart Row components section
+let cartTotalRow = document.getElementsByClassName("cart-total")[0];
+let quantityPlus = "quantity-right-plus";
 let quantityMinus = "quantity-left-minus";
+let cartIsEmpty = false;
 
 // Display & Hide the CartModal section
 cartButton.addEventListener("click", function () {
 	cartModal.style.display = "block";
+	CheckCartIfEmpty();
 	UpdateCart();
 });
 
@@ -19,7 +25,7 @@ closeButton.onclick = function () {
 	cartModal.style.display = "none";
 };
 
-close_footer.onclick = function () {
+cartCloseFooter.onclick = function () {
 	cartModal.style.display = "none";
 };
 
@@ -31,30 +37,45 @@ window.onclick = function (event) {
 	}
 };
 
+const NotEmptyHeaderMessage = `Bạn có <span class="cart-quantity text-muted">4</span> <span class="text-muted">sản phẩm</span> trong Order`
+const EmptyHeaderMessage =  `<span>Đơn hàng <span class="text-muted">đang trống</span></span>`;
 // Cart main events & functions
+function CheckCartIfEmpty() {
+	let hiddenClass = "invisible";
+	let cartItemList = cartBody.getElementsByClassName("cart-item");
+	if(cartItemList.length > 0) {
+		cartFooter.classList.remove(hiddenClass);
+		cartIsEmpty = false;
+		cartHeader.innerHTML = NotEmptyHeaderMessage;
+	}
+	else {
+		cartFooter.classList.add(hiddenClass);
+		//cartFooter.getElementsByClassName("d-flex")[0].style.display = "none!important";
+		cartIsEmpty = true;
+		cartHeader.innerHTML = EmptyHeaderMessage;
+	}
+}
+
 orderButton.onclick = function () {
 	alert("Cảm ơn bạn đã thanh toán đơn hàng");
 };
 
 let addToCartButtonList = document.getElementsByClassName("add-to-cart");
-for (let i = 0; i < addToCartButtonList.length; i++) {
-	let addToCartButton = addToCartButtonList[i];
+for (const element of addToCartButtonList) {
+	let addToCartButton = element;
 
 	//Add event to add new product
 	addToCartButton.addEventListener("click", function (event) {
 		let button = event.target;
 		let product = button.parentElement.parentElement;
-		let img =
-			product.parentElement.getElementsByClassName("product-img")[0];
+		let img = product.parentElement.getElementsByClassName("product-img")[0];
 		let style = window.getComputedStyle(img);
 		let backgroundImage = style.getPropertyValue("background-image");
 		let imgUrl = backgroundImage.slice(4, -1).replace(/"/g, "");
 
-		let title =
-			product.getElementsByClassName("content-product-h3")[0].innerText;
+		let title = product.getElementsByClassName("content-product-h3")[0].innerText;
 		let price = product.getElementsByClassName("price")[0].innerText;
 		AddItemToCart(title, price, imgUrl);
-		// modal.style.display = "block";
 		UpdateCart();
 	});
 }
@@ -75,10 +96,9 @@ function AddItemToCart(productTitle, productPrice, productImgURL) {
 	let newCartRow = document.createElement("div");
 	cartClassList.forEach((element) => newCartRow.classList.add(element));
 	// Get the Cart body to add Product
-	let cartItemList = document.getElementsByClassName("cart-body")[0];
-	let cartItemTitles = cartItemList.getElementsByClassName("cart-item-title");
-	for (let i = 0; i < cartItemTitles.length; i++) {
-		if (cartItemTitles[i].innerText == productTitle) {
+	let cartItemTitles = cartBody.getElementsByClassName("cart-item-title");
+	for (const element of cartItemTitles) {
+		if (element.innerText == productTitle) {
 			alert("Sản Phẩm Đã Có Trong Giỏ Hàng");
 			return;
 		}
@@ -109,7 +129,7 @@ function AddItemToCart(productTitle, productPrice, productImgURL) {
         </div>
     `;
 	newCartRow.innerHTML = cartRowContent;
-	cartItemList.append(newCartRow);
+	cartBody.append(newCartRow);
 
 	newCartRow
 		.getElementsByClassName("cart-quantity-input")[0]
@@ -122,7 +142,7 @@ function AddItemToCart(productTitle, productPrice, productImgURL) {
 		});
 }
 
-cartModal.addEventListener("click", function (event) {
+function RemoveCartItem(event) {
 	let isRemoveItemButton = false;
 	let removeItemButton = null;
 	event.target.classList.forEach((element) => {
@@ -140,10 +160,10 @@ cartModal.addEventListener("click", function (event) {
 
 	if (isRemoveItemButton) {
 		removeItemButton.parentElement.parentElement.remove();
+		CheckCartIfEmpty();
 		UpdateCart();
 	}
-});
-
+}
 
 function ChangeQuantity(event) {
     let changeButton = event.target;
@@ -172,26 +192,10 @@ function ChangeQuantity(event) {
     UpdateCart();
 }
 
-// update cart
-function UpdateCart() {
-	let cartBody = document.getElementsByClassName("cart-body")[0];
-	let cartItemList = cartBody.getElementsByClassName("cart-item");
-	let total = 0;
-	for (let i = 0; i < cartItemList.length; i++) {
-		let cartItem = cartItemList[i];
-		let itemPrice = cartItem.getElementsByClassName("item-price")[0];
-		let quantity_item = cartItem.getElementsByClassName("cart-quantity-input")[0];
-		let price = parseFloat(itemPrice.innerText); // chuyển một chuổi string sang number để tính tổng tiền.
-		let quantity = quantity_item.value; // lấy giá trị trong thẻ input
-		total += price * quantity;
-	}
-    cartTotalPrice.innerText = total + " VNĐ";
-	// Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
-}
-// thay đổi số lượng sản phẩm
-let quantity_input = document.getElementsByClassName("cart-quantity-input");
-for (let i = 0; i < quantity_input.length; i++) {
-	let input = quantity_input[i];
+// Update cart if has any change from cart item quantity
+let quantityInputs = document.getElementsByClassName("cart-quantity-input");
+for (const element of quantityInputs) {
+	let input = element;
 	input.addEventListener("change", function (event) {
 		let input = event.target;
 		if (isNaN(input.value) || input.value <= 0) {
@@ -199,4 +203,26 @@ for (let i = 0; i < quantity_input.length; i++) {
 		}
 		UpdateCart();
 	});
+}
+
+// Update cart function
+function UpdateCart() {
+	let cartItemList = cartBody.getElementsByClassName("cart-item");
+	let cartQuantity = cartHeader.getElementsByClassName("cart-quantity")[0];
+	if(!cartIsEmpty) cartQuantity.innerText = cartItemList.length;
+	let total = 0;
+	for (const element of cartItemList) {
+		let cartItem = element;
+		let priceItem = cartItem.getElementsByClassName("item-price")[0];
+		let quantityItem = cartItem.getElementsByClassName("cart-quantity-input")[0];
+		// Parse the string from input to number for calculating total price
+		let price = parseFloat(priceItem.innerText);
+		let quantity = quantityItem.value;
+		total += price * quantity;
+	}
+	let cartTotalPrice = cartTotalRow.getElementsByClassName("total-price")[0];
+
+	// Set total price to cartTotal
+	if(total == 0) cartTotalPrice.innerText = 0 + " VNĐ";
+    else cartTotalPrice.innerText = total + " VNĐ";
 }

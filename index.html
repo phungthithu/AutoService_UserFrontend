@@ -50,17 +50,17 @@
 					<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
 				</ul>
             </div>
-            <button id="cart">
+            <button id="cartButton">
                 <i class="icon icon-shopping_cart" aria-hidden="true"></i>
             </button>
             <!-- Cart section -->
-            <div id="myModal" class="modal bg-transparent pt-5" style="z-index: 100;">
+            <div id="cartModal" class="modal bg-transparent pt-5" style="z-index: 100;" onclick="RemoveCartItem(event);">
                 <div class="container cart bg-transparent p-0">
                     <div class="row no-gutters justify-content-center">
                         <div class="col-md-10 col-sm p-4 bg-light rounded">
                             <div class="cart-header d-flex pl-2 pb-0 justify-content-between">
                                 <div class="font-weight-bold d-flex align-items-center">
-                                    <span>
+                                    <span class="header-message">
                                         Bạn có <span class="cart-quantity text-muted">4</span> <span class="text-muted">sản phẩm</span> trong Order
                                     </span>
                                 </div>
@@ -68,7 +68,7 @@
                                     <button type="button" class="btn btn-outline-danger font-weight-bold">&#9932</button>
                                 </span>
                             </div>
-                            <div class="cart-total d-flex justify-content-between align-items-center mt-3 p-2 cart-item rounded rounded">
+                            <div class="cart-total d-flex justify-content-between align-items-center mt-3 p-2 cart-total-price rounded rounded">
                                 <div class="d-flex flex-row text-muted">
                                    <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
                                 </div>
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                             <div class="cart-body">
-                                <div class="cart-item d-flex justify-content-between align-items-center mt-3 p-2 rounded">
+                                <div class="cart-item d-flex flex-sm-column flex-md-row justify-content-between align-items-center mt-3 p-2 rounded">
                                     <div class="d-flex flex-row">
                                         <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
                                         <div class="ml-2">
@@ -90,7 +90,7 @@
                                         </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center">
-                                        <span class="quantity-input">
+                                        <span class="quantity-input d-sm-inline-flex">
                                             <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
                                                 <i class="icon-minus"></i>
                                             </button>
