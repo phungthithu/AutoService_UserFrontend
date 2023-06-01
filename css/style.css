@@ -13526,10 +13526,6 @@ label.star:before {
 
 }
 
-.cart-item-title {
-
-}
-
 .cart-item-image {
 
 }
@@ -13704,7 +13700,6 @@ h5.modal-title {
 
 .cart-item-title {
   color: #333;
-  margin-left: .5em;
   font-size: 1.2em;
 }
 
