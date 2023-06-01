@@ -57,7 +57,7 @@
             <div id="cartModal" class="modal bg-transparent pt-5" style="z-index: 100;" onclick="RemoveCartItem(event);">
                 <div class="container cart bg-transparent p-0">
                     <div class="row no-gutters justify-content-center">
-                        <div class="col-md-10 col-sm p-4 bg-light rounded">
+                        <div class="col-md-10 p-4 bg-light rounded">
                             <div class="cart-header d-flex pl-2 pb-0 justify-content-between">
                                 <div class="font-weight-bold d-flex align-items-center">
                                     <span class="header-message">
@@ -81,51 +81,51 @@
                                 </div>
                             </div>
                             <div class="cart-body">
-                                <div class="cart-item d-flex flex-sm-column flex-md-row justify-content-between align-items-center mt-3 p-2 rounded">
-                                    <div class="d-flex flex-row">
+                                <div class="cart-item d-flex flex-md-row justify-content-between align-items-center mt-3 p-2 rounded">
+                                    <div class="d-flex flex-row cart-left-item">
                                         <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                        <div class="ml-2">
-                                            <span class="cart-item-title text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                            <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        <div class="ml-3 d-flex flex-column align-self-center text-left font-weight-bold">
+                                            <span class="cart-item-title d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="spec">Category: Cafe</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="quantity-input d-sm-inline-flex">
-                                            <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
+                                    <div class="d-flex flex-row align-items-center cart-right-item">
+                                        <span class="quantity-input d-flex">
+                                            <button type="button" class="quantity-left-minus btn btn-light d-flex align-self-center" onclick="ChangeQuantity(event);">
                                                 <i class="icon-minus"></i>
                                             </button>
-                                            <input class="cart-quantity-input text-muted font-weight-bold rounded" type="number" value="2">
-                                            <button type="button" class="quantity-right-plus btn btn-light" onclick="ChangeQuantity(event);">
+                                            <input class="cart-quantity-input text-muted bg-light text-center font-weight-bold rounded" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn btn-light d-flex align-self-center" onclick="ChangeQuantity(event);">
                                                 <i class="icon-plus"></i>
                                             </button>
                                         </span>
                                         <span class="d-block px-4 font-weight-bold">$<span class="item-price">900</span></span>
                                         <span class="remove-item">
-                                            <i class="icon-trash mr-2 h5 text-black-50"></i>
+                                            <i class="icon-trash px-2 h5 text-black-50"></i>
                                         </span>
                                     </div>
                                 </div>
-                                <div class="cart-item d-flex justify-content-between align-items-center mt-3 p-2 rounded">
-                                    <div class="d-flex flex-row">
+                                <div class="cart-item d-flex flex-md-row justify-content-between align-items-center mt-3 p-2 rounded">
+                                    <div class="d-flex flex-row cart-left-item">
                                         <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
-                                        <div class="ml-2">
-                                            <span class="cart-item-title text-left font-weight-bold d-block text-dark"> Iphone 11 pro </span>
-                                            <span class="text-left spec font-weight-bold">256GB, Navy Blue</span>
+                                        <div class="ml-3 d-flex flex-column align-self-center text-left font-weight-bold">
+                                            <span class="cart-item-title d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="spec">Category: Cafe</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <span class="quantity-input">
-                                            <button type="button" class="quantity-left-minus btn btn-light" onclick="ChangeQuantity(event);">
+                                    <div class="d-flex flex-row align-items-center cart-right-item">
+                                        <span class="quantity-input d-flex">
+                                            <button type="button" class="quantity-left-minus btn btn-light d-flex align-self-center" onclick="ChangeQuantity(event);">
                                                 <i class="icon-minus"></i>
                                             </button>
-                                            <input class="cart-quantity-input text-muted font-weight-bold rounded" type="number" value="2">
-                                            <button type="button" class="quantity-right-plus btn btn-light" onclick="ChangeQuantity(event);">
+                                            <input class="cart-quantity-input text-muted bg-light text-center font-weight-bold rounded" type="number" value="2">
+                                            <button type="button" class="quantity-right-plus btn btn-light d-flex align-self-center" onclick="ChangeQuantity(event);">
                                                 <i class="icon-plus"></i>
                                             </button>
                                         </span>
                                         <span class="d-block px-4 font-weight-bold">$<span class="item-price">900</span></span>
                                         <span class="remove-item">
-                                            <i class="icon-trash mr-2 h5 text-black-50"></i>
+                                            <i class="icon-trash px-2 h5 text-black-50"></i>
                                         </span>
                                     </div>
                                 </div>
