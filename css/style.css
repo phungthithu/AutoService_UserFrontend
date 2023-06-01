@@ -13846,13 +13846,13 @@ h5.modal-title {
 
 }
 
-/* .coupon-section #cpnCode {
+.coupon-section #cpnCode {
   border: 1px dashed #fff;
   padding: 10px 20px;
   border-right: 0;
   font-weight: 400;
 
-} */
+}
 
 .coupon-section #cpnBtn {
   font-weight: 600;
@@ -13916,8 +13916,10 @@ h5.modal-title {
     font-size: 13.5px;
     /* padding: 0; */
   }
-  .myProfile{
-    font-family: "Great Vibes", cursive;
-  }
+}
+.myProfile{
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  font-weight: 800;
 }
 
