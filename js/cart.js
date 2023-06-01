@@ -37,8 +37,8 @@ orderButton.onclick = function () {
 };
 
 let addToCartButtonList = document.getElementsByClassName("add-to-cart");
-for (let i = 0; i < addToCartButtonList.length; i++) {
-	let addToCartButton = addToCartButtonList[i];
+for (const element of addToCartButtonList) {
+	let addToCartButton = element;
 
 	//Add event to add new product
 	addToCartButton.addEventListener("click", function (event) {
@@ -54,7 +54,6 @@ for (let i = 0; i < addToCartButtonList.length; i++) {
 			product.getElementsByClassName("content-product-h3")[0].innerText;
 		let price = product.getElementsByClassName("price")[0].innerText;
 		AddItemToCart(title, price, imgUrl);
-		// modal.style.display = "block";
 		UpdateCart();
 	});
 }
@@ -77,8 +76,8 @@ function AddItemToCart(productTitle, productPrice, productImgURL) {
 	// Get the Cart body to add Product
 	let cartItemList = document.getElementsByClassName("cart-body")[0];
 	let cartItemTitles = cartItemList.getElementsByClassName("cart-item-title");
-	for (let i = 0; i < cartItemTitles.length; i++) {
-		if (cartItemTitles[i].innerText == productTitle) {
+	for (const element of cartItemTitles) {
+		if (element.innerText == productTitle) {
 			alert("Sản Phẩm Đã Có Trong Giỏ Hàng");
 			return;
 		}
@@ -172,26 +171,10 @@ function ChangeQuantity(event) {
     UpdateCart();
 }
 
-// update cart
-function UpdateCart() {
-	let cartBody = document.getElementsByClassName("cart-body")[0];
-	let cartItemList = cartBody.getElementsByClassName("cart-item");
-	let total = 0;
-	for (let i = 0; i < cartItemList.length; i++) {
-		let cartItem = cartItemList[i];
-		let itemPrice = cartItem.getElementsByClassName("item-price")[0];
-		let quantity_item = cartItem.getElementsByClassName("cart-quantity-input")[0];
-		let price = parseFloat(itemPrice.innerText); // chuyển một chuổi string sang number để tính tổng tiền.
-		let quantity = quantity_item.value; // lấy giá trị trong thẻ input
-		total += price * quantity;
-	}
-    cartTotalPrice.innerText = total + " VNĐ";
-	// Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
-}
-// thay đổi số lượng sản phẩm
-let quantity_input = document.getElementsByClassName("cart-quantity-input");
-for (let i = 0; i < quantity_input.length; i++) {
-	let input = quantity_input[i];
+// Update cart if has any change from cart item quantity
+let quantityInputs = document.getElementsByClassName("cart-quantity-input");
+for (const element of quantityInputs) {
+	let input = element;
 	input.addEventListener("change", function (event) {
 		let input = event.target;
 		if (isNaN(input.value) || input.value <= 0) {
@@ -199,4 +182,22 @@ for (let i = 0; i < quantity_input.length; i++) {
 		}
 		UpdateCart();
 	});
+}
+
+// Update cart function
+function UpdateCart() {
+	let cartBody = document.getElementsByClassName("cart-body")[0];
+	let cartItemList = cartBody.getElementsByClassName("cart-item");
+	let total = 0;
+	for (const element of cartItemList) {
+		let cartItem = element;
+		let priceItem = cartItem.getElementsByClassName("item-price")[0];
+		let quantityItem = cartItem.getElementsByClassName("cart-quantity-input")[0];
+		// Parse the string from input to number for calculating total price
+		let price = parseFloat(priceItem.innerText);
+		let quantity = quantityItem.value;
+		total += price * quantity;
+	}
+    cartTotalPrice.innerText = total + " VNĐ";
+	// Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
 }
