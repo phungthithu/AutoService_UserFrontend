@@ -88,6 +88,10 @@ label.radio input:checked + span {
 }
 
 /* Cart section */
+.item-total-price {
+	color: rgb(187, 135, 63);
+}
+
 .cart-item,
 .cart-total-price {
 	-webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.25);
@@ -100,18 +104,20 @@ label.radio input:checked + span {
 
 @media screen and (max-width: 587px) {
 	.cart-item {
-	--responsive-width: 72%;
+	--responsive-width: 80%;
     --responsive-padding: 0.4rem;
 		display: flex;
 		flex-direction: column;
 	}
 
   .cart-left-item {
+	width: var(--responsive-width);
     padding-bottom: var(--responsive-padding);
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .cart-right-item {
+	width: var(--responsive-width);
     justify-content: space-around;
     border: 2px solid rgb(190, 181, 181);
     border-radius: 4px;
