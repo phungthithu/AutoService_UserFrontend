@@ -117,11 +117,7 @@ label.radio input:checked + span {
 
 }
 
-.cart-total-price {
-
-}
-
-.cart-item {
+.cart-item, .cart-total-price {
   -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08);
 }
