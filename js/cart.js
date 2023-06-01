@@ -8,9 +8,11 @@ let cartBody = cartModal.getElementsByClassName("cart-body")[0];
 let cartFooter = cartModal.getElementsByClassName("cart-footer")[0];
 let cartCloseFooter = document.getElementsByClassName("close-footer")[0];
 let orderButton = document.getElementsByClassName("order")[0];
+// Cart Row components section
 let cartTotalRow = document.getElementsByClassName("cart-total")[0];
 let quantityPlus = "quantity-right-plus";
 let quantityMinus = "quantity-left-minus";
+let cartIsEmpty = false;
 
 // Display & Hide the CartModal section
 cartButton.addEventListener("click", function () {
@@ -39,11 +41,17 @@ const NotEmptyHeaderMessage = `Bạn có <span class="cart-quantity text-muted">
 const EmptyHeaderMessage =  `<span>Đơn hàng <span class="text-muted">đang trống</span></span>`;
 // Cart main events & functions
 function CheckCartIfEmpty() {
+	let hiddenClass = "invisible";
 	let cartItemList = cartBody.getElementsByClassName("cart-item");
 	if(cartItemList.length > 0) {
+		cartFooter.classList.remove(hiddenClass);
+		cartIsEmpty = false;
 		cartHeader.innerHTML = NotEmptyHeaderMessage;
 	}
 	else {
+		cartFooter.classList.add(hiddenClass);
+		//cartFooter.getElementsByClassName("d-flex")[0].style.display = "none!important";
+		cartIsEmpty = true;
 		cartHeader.innerHTML = EmptyHeaderMessage;
 	}
 }
@@ -201,7 +209,7 @@ for (const element of quantityInputs) {
 function UpdateCart() {
 	let cartItemList = cartBody.getElementsByClassName("cart-item");
 	let cartQuantity = cartHeader.getElementsByClassName("cart-quantity")[0];
-	cartQuantity.innerText = cartItemList.length;
+	if(!cartIsEmpty) cartQuantity.innerText = cartItemList.length;
 	let total = 0;
 	for (const element of cartItemList) {
 		let cartItem = element;
@@ -213,5 +221,8 @@ function UpdateCart() {
 		total += price * quantity;
 	}
 	let cartTotalPrice = cartTotalRow.getElementsByClassName("total-price")[0];
-    cartTotalPrice.innerText = total + " VNĐ";
+
+	// Set total price to cartTotal
+	if(total == 0) cartTotalPrice.innerText = 0 + " VNĐ";
+    else cartTotalPrice.innerText = total + " VNĐ";
 }
