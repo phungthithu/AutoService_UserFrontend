@@ -13781,19 +13781,21 @@ h5.modal-title {
 
 /* Coupon */
 .coupon-section .container {
-  width: 600px;
+  /* width: 600px; */
   /* height: 100vh; */
   /* background: #c49b63; */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 30px;
+  /* position: relative; */
 }
 
 .coupon-section .coupon-card {
   /* width: 600px; */
+  /* display: flex; */
   height: 200px;
   background: linear-gradient(135deg, #c49b63, #c49b63);
   color: #fff;
@@ -13801,12 +13803,12 @@ h5.modal-title {
   padding: 10px 10px;
   border-radius: 15px;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
-  position: relative;
+  /* position: absolute; */
 
 }
 
 .coupon-section .coupon-card h3 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -13814,17 +13816,21 @@ h5.modal-title {
   font-size: 15px;
   font-weight: 100;
   margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  text-align: center;
 }
 .coupon-section .condition-title{
-  margin-bottom: 30px;
+  margin-top: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .coupon-section .coupon-card p {
-  font-size: 13px;
-  /* display: inline-block; */
-  padding-right: 40px;
-  padding-left: 40px;
-
+  margin-bottom: 0;
+  font-size: 15px;
 }
 .coupon-section .discount h2 {
   margin: 0;
@@ -13843,13 +13849,24 @@ h5.modal-title {
 .coupon-section .date-valid {
   /* display: flex; */
   margin-top: 20px;
+  position: absolute;
+  right: 0px;
+  left: 0;
+  bottom: 0;
 }
 
 .coupon-section .coupon-row {
-  display: flex;
+  /* display: flex; */
+  text-align: center;
   align-items: center;
-  margin: 25px auto;
-  width: fit-content;
+  /* margin: 25px auto; */
+  /* width: fit-content; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  /* top: 50%; */
+  /* transform: translate(-50%, -50%); */
 
 }
 
@@ -13865,7 +13882,7 @@ h5.modal-title {
   font-weight: 600;
   border: 1px solid #fff;
   background: #fff;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   color: #7158fe;
   cursor: pointer;
 }
@@ -13873,55 +13890,47 @@ h5.modal-title {
   font-weight: 600;
   border: 1px solid #fff;
   background: #fff;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   color: #7158fe;
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .coupon-section .container {
+    display: flex;
     /* min-width: 400px; */
     /* max-width: 700px; */
   }
   .coupon-section .container .coupon-card {
+    position: relative;
     /* margin: 0; */
-    /* min-width: 400px; */
+    min-width: 360px;
+    display: flex;
     /* max-width: 600px; */
   }
   .coupon-section .coupon-card .discount {
     /* min-width: 100px; */
-    max-width: 119px;
+    /* max-width: 119px; */
   }
   .coupon-section .coupon-card .condition {
     /* min-width: 200px; */
-    max-width: 230px;
-    /* padding: 10px; */
-    /* padding-left: 15px; */
+    /* max-width: 260px; */
+
   }
   
   .coupon-section .coupon-card h3 {
     font-size: 15px;
   }
-  .coupon-section .coupon-card h5 {
-    /* font-size: 10px; */
-  }
   
   .coupon-section .coupon-card p {
-    font-size: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    display: inline;
-  
+    font-size: 12px;
   }
-  .coupon-section .discount .subheading {
-    font-size: 30px;
+  .coupon-section .discount .heading-discount {
+    font-size: 35px;
   }
-  
   .coupon-section #cpnBtn {
-    /* padding: 10px 10px; */
     padding: 10px 10px;
     font-size: 13.5px;
-    /* padding: 0; */
   }
 }
 .myProfile{
