@@ -13813,7 +13813,7 @@ h5.modal-title {
 }
 
 .coupon-section .coupon-card p {
-  font-size: 15px;
+  font-size: 13px;
   /* display: inline-block; */
   padding-right: 40px;
   padding-left: 40px;
@@ -13862,6 +13862,14 @@ h5.modal-title {
   color: #7158fe;
   cursor: pointer;
 }
+.collect {
+  font-weight: 600;
+  border: 1px solid #fff;
+  background: #fff;
+  padding: 10px 20px;
+  color: #7158fe;
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
   .coupon-section .container {
@@ -13875,7 +13883,7 @@ h5.modal-title {
   }
   .coupon-section .coupon-card .discount {
     /* min-width: 100px; */
-    max-width: 120px;
+    max-width: 119px;
   }
   .coupon-section .coupon-card .condition {
     /* min-width: 200px; */

@@ -49,7 +49,7 @@ for (var i = 0; i < add_cart.length; i++) {
    
     updatecart()
   })
- 
+
 }
 
 function addItemToCart(title, price, img) {
