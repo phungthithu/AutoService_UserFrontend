@@ -13839,13 +13839,15 @@ h5.modal-title {
 
 }
 
-.condition-title{
+.condition-title {
   margin: 0;
 }
-.coupon-row{
-   margin: 0;
+
+.coupon-row {
+  margin: 0;
 }
-.date-valid{
+
+.date-valid {
   margin: 0;
 }
 
@@ -13854,12 +13856,14 @@ h5.modal-title {
   font-weight: 400;
   margin-bottom: 0;
 }
+
 .coupon-section .coupon-card h5 {
   font-size: 15px;
   font-weight: 100;
   margin-bottom: 0;
 }
-.coupon-section .condition-title{
+
+.coupon-section .condition-title {
   margin-bottom: 30px;
 }
 
@@ -13870,6 +13874,7 @@ h5.modal-title {
   padding-left: 40px;
 
 }
+
 .coupon-section .discount h2 {
   margin: 0;
   padding-top: 40px;
@@ -13922,15 +13927,18 @@ h5.modal-title {
     /* min-width: 400px; */
     /* max-width: 700px; */
   }
+
   .coupon-section .container .coupon-card {
     /* margin: 0; */
     /* min-width: 400px; */
     /* max-width: 600px; */
   }
+
   .coupon-section .coupon-card .discount {
     /* min-width: 100px; */
     max-width: 120px;
   }
+
   .coupon-section .coupon-card .condition {
     /* min-width: 200px; */
     max-width: 230px;
@@ -13942,29 +13950,36 @@ h5.modal-title {
   .coupon-section .coupon-card h3 {
     font-size: 15px;
   }
+
   .coupon-section .coupon-card h5 {
     /* font-size: 10px; */
   }
-  
+
   .coupon-section .coupon-card p {
     font-size: 10px;
     padding-right: 10px;
     padding-left: 10px;
     display: inline;
-  
+
   }
+
   .coupon-section .discount .subheading {
     font-size: 30px;
   }
-  
+
   .coupon-section #cpnBtn {
     /* padding: 10px 10px; */
     padding: 10px 10px;
     font-size: 13.5px;
     /* padding: 0; */
   }
-  .myProfile{
+
+  .myProfile {
     font-family: "Great Vibes", cursive;
   }
 }
 
+.menu-star {
+  color: yellow;
+  font-size: 25px;
+}
