@@ -13815,11 +13815,12 @@ h5.modal-title {
 .coupon-section .coupon-card h5 {
   font-size: 15px;
   font-weight: 100;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
   text-align: center;
+  /* position: absolute; */
 }
 .coupon-section .condition-title{
   margin-top: 15px;
@@ -13835,7 +13836,7 @@ h5.modal-title {
 .coupon-section .discount h2 {
   margin: 0;
   padding-top: 40px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   text-align: center;
   align-items: center;
 
@@ -13859,14 +13860,10 @@ h5.modal-title {
   /* display: flex; */
   text-align: center;
   align-items: center;
-  /* margin: 25px auto; */
-  /* width: fit-content; */
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  /* top: 50%; */
-  /* transform: translate(-50%, -50%); */
 
 }
 
@@ -13901,6 +13898,9 @@ h5.modal-title {
     /* min-width: 400px; */
     /* max-width: 700px; */
   }
+  .coupon-section .coupon-row{
+    top: 40%;
+  }
   .coupon-section .container .coupon-card {
     position: relative;
     /* margin: 0; */
@@ -13908,16 +13908,14 @@ h5.modal-title {
     display: flex;
     /* max-width: 600px; */
   }
-  .coupon-section .coupon-card .discount {
-    /* min-width: 100px; */
-    /* max-width: 119px; */
-  }
-  .coupon-section .coupon-card .condition {
-    /* min-width: 200px; */
-    /* max-width: 260px; */
+  .coupon-section .condition-title {
+    margin-top: 0;
+}
 
-  }
-  
+.coupon-section .discount h2 {
+  padding-bottom: 30px;
+}
+
   .coupon-section .coupon-card h3 {
     font-size: 15px;
   }
@@ -13932,10 +13930,22 @@ h5.modal-title {
     padding: 10px 10px;
     font-size: 13.5px;
   }
+  .giamtoida p{
+    font-size: 12px;
+  }
 }
 .myProfile{
   font-family: "Great Vibes", cursive;
   font-size: 30px;
   font-weight: 800;
 }
+@media (max-width: 1200px) {
+  .coupon-section .discount .heading-discount {
+    font-size: 35px;
+  }
+  .coupon-section .coupon-card p {
+    font-size: 13px;
+  }
+}
+
 
