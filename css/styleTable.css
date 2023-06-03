@@ -1,102 +1,151 @@
-		*{
-			padding: 0;
-			margin: 0;
-		}
-		body{
-			margin: 50px;
-		}
-		main{
-			widows: 70%;
-			height: auto;
-			padding: 20px;
-			margin: 50px auto;
-			background: rgb(196, 155, 99);
-			font-family: system-ui;
-			color: #666;
-		}
-		.header{
-			width: 90%;
-			height: 100px;
-			margin: auto;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-		.items-controller,
-		.search{
-			flex-shrink: 0;
-			display: flex;
-			align-content: center;
-			align-items: center;
+#container-table {
+  display: flex;
+  justify-content: center;
+}
 
-		}
-		select{
-		 	padding: 2px;
-	    	margin: 0 10px;
-	   		outline: none;
-	    	cursor: pointer;
-	    	border: none;
-	    	background: transparent;
-		}
-		.search > input{
-			padding: 8px;
-		    border: none;
-		    outline: navajowhite;
-		    margin: 0 0 0 20px;
-		    background: white;
-		}
-		.field{
-			width: 90%;
-			height: auto;
-			margin: auto;
-		}
-		table{
-			width: 100%;
-			margin: 2px auto;
-			table-layout: auto;
-			color: white;
-			background-color: rgb(112, 105, 104);
-			border-collapse: collapse;
-			border-spacing: 0;
-			text-align: left;
-		}
-		table tr th, td{
-			padding: 10px;
-			border: 1px solid #ccc;
-		}
-		.bottom-field{
-			width: 100%;
-			padding: 20px;
-			margin-top: 20px;
-		}
-		.pagination{
-	      display: flex;
-	      justify-content: center;
-	      align-items: center;
-	    }
-	    .pagination li{
-	      list-style: none;
-	      padding: 2px;
-	      margin: 10px;
-	      flex-shrink: 0;
-	      text-align: center;
-	      border-radius: 5px;
-	      border: 1px solid #150909;
-	      color: white;
-	    }
-	    .pagination li.active{
-	      background: #32d6aa;
-	      color: white;
-	      border-color: #32d6aa;
+table {
+  margin: 1em 0;
+  border-collapse: collapse;
+/*   width: 100%; */
+}
 
-	    }
-	    .pagination li a{
-	      text-decoration: none;
-	      padding: 3px 8px;
-	      color: inherit;
-	      display: block;
-	      font-family: sans-serif;
-	      font-size: 13px;
-	    }
-	    i.fa-edit{color: lime;}
-		i.fa-trash{color: red;}
+caption {
+  text-align: left;
+  padding: 0.25em 0.5em 0.5em 0.5em;
+}
+
+th,
+td {
+  padding: 0.25em 0.5em 0.25em 1em;
+  vertical-align: text-top;
+  text-align: center;
+  text-indent: -0.5em;
+}
+
+th {
+  vertical-align: bottom;
+  background-color: rgb(196, 155, 99);
+  color: #fff;
+  font-weight: bold;
+}
+
+td::before {
+  display: none;
+}
+
+th:nth-of-type(3),
+td:nth-of-type(3) {
+  text-align: center;
+}
+th:nth-of-type(3),
+td:nth-of-type(3) {
+  text-align: center;
+}
+
+div {
+  overflow: auto;
+}
+
+@media screen and (max-width: 37em), print and (max-width: 5in) {
+  table,
+  tr,
+  td {
+    display: block;
+	
+  }
+  #container-table {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+  tr {
+    padding: 0.7em 2vw;
+  }
+  th,
+  tr:first-of-type {
+    display: none;
+  }
+  td::before {
+    display: inline;
+    font-weight: bold;
+  }
+  td {
+    display: grid;
+    grid-template-columns: 4em auto;
+    grid-gap: 1em 0.5em;
+  }
+  caption {
+    background-color: rgba(0, 0, 0, 0.35);
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  td:nth-of-type(3) {
+    text-align: center;
+    width: 12em;
+  }
+  td:nth-of-type(3)::before {
+    text-align: center;
+  }
+  td:nth-of-type(4), td:nth-of-type(5) {
+    text-align: center;
+    width: 12em;
+  }
+  td:nth-of-type(6) {
+    text-align: center;
+    width: 12em;
+  }
+  td:nth-of-type(4)::before {
+    text-align: left;
+  }
+  td:nth-of-type(6)::before {
+    text-align: center;
+  }
+  tr{
+    font-size: 2rem;
+  }
+}
+
+@media print {
+  body {
+    font-size: 6pt;
+    color: #000;
+    background-color: #fff;
+    background-image: none;
+  }
+  body,
+  main {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: none;
+  }
+  table {
+    page-break-inside: avoid;
+  }
+  div {
+    overflow: visible;
+  }
+  th {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1pt solid #000;
+  }
+  tr {
+    border-top: 1pt solid #000;
+  }
+}
+
+@media print and (max-width: 5in) {
+  caption {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1pt solid #000;
+  }
+  table {
+    page-break-inside: auto;
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+}
