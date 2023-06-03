@@ -2,11 +2,14 @@
 	--main-color: #bebebe;
 	--done-color: rgb(196, 155, 99);
 	--done-border: rgb(176, 137, 81);
+	--cancel-color: rgb(220, 121, 99);
+	--cancel-border: rgb(176, 81, 81);
 	counter-reset: step;
 	font-size: 10px;
 	position: relative;
 	/* for demo */
 }
+
 
 .historyRow {
 	background-color: rgb(250, 245, 238);
@@ -54,6 +57,11 @@
 	z-index: -1;
 }
 
+.progressbar li.active:after,
+.progressbar li.complete:after {
+	background: var(--done-border);
+}
+
 .progressbar li:first-child:after {
 	content: none;
 }
@@ -65,12 +73,22 @@
 	color: #fff;
 }
 
-.progressbar li.active:after,
-.progressbar li.complete:after {
-	background: var(--done-border);
-}
-
 .progressbar li.active span {
 	color: var(--done-color);
 	font-weight: 700;
+}
+
+/* Cancel Section */
+.cancel span {
+	color: var(--cancel-border);
+}
+
+.progressbar .cancel .progress-icon {
+	background: var(--cancel-color);
+	border-color: var(--cancel-border);
+	color: #fff;
+}
+
+.progressbar .cancel:after {
+	background: var(--cancel-border);
 }
