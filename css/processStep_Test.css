@@ -70,7 +70,7 @@
 	background: var(--done-border);
 }
 
-.progressbar li.active span {
+.progressbar li.active {
 	color: var(--done-color);
 	font-weight: 700;
 }
