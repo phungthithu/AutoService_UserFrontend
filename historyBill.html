@@ -32,8 +32,10 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<!-- css table historyBill -->
-	<link rel="stylesheet" href="css/styleTable.css">
 
+
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="css/processStep.css">
 </head>
 
 <body>
@@ -145,58 +147,35 @@
     </nav>
 	<!-- END nav -->
 
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section ftco-animate text-center">
-					<h2 class="mb-4">History Bill</h2>
+	<div class="row">
+		<div class="history-item"
+			style="color: black; background-color: white; text-align: left; width: 300px;">
+			<div class="history-table-code" style="font-weight: bold; font-size: 14px;">
+				Table code : 001
+			</div>
+			<div class="date-price d-flex justify-content-between">
+				<div class="date-history" style="color: darkgrey; font-size: 10px;">
+					Date: 06/03/2023
 				</div>
 			</div>
-			<div class="row owl-carousel2">
-				<input class="search col-md-9" type="text"
-					style="margin-bottom: 2rem; margin-right: 1rem; border-radius: 10px;">
-				<button class="btn btn-primary col-md-2" style="margin-bottom: 2rem;">Search</button>
-				<table class="table">
-					<thead class="thead-primary">
-						<tr class="text-center">
-							<th>Bill Code</th>
-							<th>Date</th>
-							<th>Total Cost</th>
-							<th>Detail bill</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="text-center">
-							<td class="image-prod">
-								<!-- <div class="img" style="background-image:url(images/menu-2.jpg);"></div> -->
-								001
-							</td>
-							<td class="product-name">
-								<h3>Creamy Latte Coffee</h3>
-								<!-- <p>Far far away, behind the word mountains, far from the countries</p> -->
-							</td>
-							<td class="price">$4.90</td>
-							<td class="total"><a href="cart.html">view</a></td>
-						</tr><!-- END TR-->
-						<tr class="text-center">
-							<td class="image-prod">
-								<!-- <div class="img" style="background-image:url(images/dish-2.jpg);"></div> -->
-								002
-							</td>
-							<td class="product-name">
-								<h3>Grilled Ribs Beef</h3>
-								<!-- <p>Far far away, behind the word mountains, far from the countries</p> -->
-							</td>
-							<td class="price">$15.70</td>
-							<td class="total"><a href="cart.html">view</a></td>
-						</tr><!-- END TR-->
-					</tbody>
-				</table>
-
-
+			<div class="status " style="background-color: cadetblue;">
+				<div class="progress-bar-wrapper">
+					<ul class="progressbar">
+						<li class="complete">Send</li>
+						<li class="complete">Receive</li>
+						<li class="active">Process</li>
+						<li>Done</li>
+					  </ul>
+				</div>
+			</div>
+			<div class="price" style="background-color: whitesmoke">
+				Total cost: 59.000đ
+			</div>
+			<div class="view d-flex justify-content-end p-2" style="background-color: white;">
+				<button class="btn btn btn-primary" style="color: white;">View/Comment</button>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -253,6 +232,8 @@
 	<script src="js/main.js"></script>
 
 	<script src="js/jsCodeHistoryBill.js"></script>
+
+	<script src="js/processStep.Bar.js"></script>
 </body>
 
 </html>
