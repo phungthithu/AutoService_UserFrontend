@@ -13803,7 +13803,6 @@ h5.modal-title {
   padding: 10px 10px;
   border-radius: 15px;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
-  /* position: absolute; */
 
 }
 
@@ -13815,12 +13814,10 @@ h5.modal-title {
 .coupon-section .coupon-card h5 {
   font-size: 15px;
   font-weight: 100;
-  /* margin-bottom: 0; */
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
   text-align: center;
-  /* position: absolute; */
 }
 .coupon-section .condition-title{
   margin-top: 15px;
@@ -13836,7 +13833,6 @@ h5.modal-title {
 .coupon-section .discount h2 {
   margin: 0;
   padding-top: 40px;
-  /* padding-bottom: 20px; */
   text-align: center;
   align-items: center;
 
@@ -13848,7 +13844,6 @@ h5.modal-title {
 }
 
 .coupon-section .date-valid {
-  /* display: flex; */
   margin-top: 20px;
   position: absolute;
   right: 0px;
@@ -13857,7 +13852,6 @@ h5.modal-title {
 }
 
 .coupon-section .coupon-row {
-  /* display: flex; */
   text-align: center;
   align-items: center;
   position: absolute;
