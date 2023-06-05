@@ -2,201 +2,426 @@
 <html lang="en">
 
 <head>
-	<title>Coffee - Free Bootstrap 4 Template by Colorlib</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coffee Blend</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-	<link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/aos.css">
 
-	<link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
 
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-	<link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
 
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<!-- css table historyBill -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/processStep_Test.css">
 
-
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<link rel="stylesheet" href="css/processStep.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Coffee<small>Blend</small></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-					<li class="nav-item"><a href="services.html" class="nav-link">Voucher</a></li>
-					<li class="nav-item active"><a href="historyBill.html" class="nav-link">History bill</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact/Service</a></li>
-				</ul>
-			</div>
-			<button id="cart">
-				<i class="icon icon-shopping_cart" aria-hidden="true"></i>
-			</button>
-			<div id="myModal" class="modal">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Giỏ Hàng</h5>
-						<span class="close">&times;</span>
-					</div>
-					<div class="modal-body">
-						<div class="cart-row">
-							<span class="cart-item cart-header cart-column">Sản Phẩm</span>
-							<span class="cart-price cart-header cart-column">Giá</span>
-							<span class="cart-quantity cart-header cart-column">Số Lượng</span>
-						</div>
-						<div class="cart-items">
-							<div class="cart-row">
-								<div class="cart-item cart-column">
-									<img class="cart-item-image" src="images/drink-1.jpg" width="100" height="100">
-									<span class="cart-item-title">Nuoc 1</span>
-								</div>
-								<span class="cart-price cart-column">25000đ</span>
-								<div class="cart-quantity cart-column">
-									<input class="cart-quantity-input" type="number" value="1">
-									<button class="btn btn-danger" type="button">x</button>
-								</div>
-							</div>
-							<div class="cart-row">
-								<div class="cart-item cart-column">
-									<img class="cart-item-image" src="images/drink-2.jpg" width="100" height="100">
-									<span class="cart-item-title">Nuowsc 2</span>
-								</div>
-								<span class="cart-price cart-column">15000đ</span>
-								<div class="cart-quantity cart-column">
-									<input class="cart-quantity-input" type="number" value="2">
-									<button class="btn btn-danger" type="button">x</button>
-								</div>
-							</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Coffee<small>Blend</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="coupon.html" class="nav-link">Voucher</a></li>
+                    <li class="nav-item active"><a href="historyBill.html" class="nav-link">History bill</a></li>
+                    <li class="nav-item "><a href="coupon.html" class="nav-link">Contact/Service</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+            <button id="cartButton">
+                <i class="icon icon-shopping_cart" aria-hidden="true"></i>
+            </button>
+            <!-- Cart section -->
+            <div id="cartModal" class="modal bg-transparent pt-5" style="z-index: 100;"
+                onclick="RemoveCartItem(event);">
+                <div class="container cart bg-transparent p-0">
+                    <div class="row no-gutters justify-content-center">
+                        <div class="col-md-10 p-4 bg-light rounded">
+                            <div class="cart-header d-flex pl-2 pb-0 justify-content-between">
+                                <div class="font-weight-bold d-flex align-items-center">
+                                    <span class="header-message">
+                                        Bạn có <span class="cart-quantity text-muted">0</span> <span
+                                            class="text-muted">sản phẩm</span> trong Order
+                                    </span>
+                                </div>
+                                <span class="close">
+                                    <button type="button"
+                                        class="btn btn-outline-danger font-weight-bold">&#9932</button>
+                                </span>
+                            </div>
+                            <div
+                                class="cart-total d-flex justify-content-between align-items-center mt-3 p-2 cart-total-price rounded rounded">
+                                <div class="d-flex flex-row text-muted">
+                                    <span class="pl-2 text-left font-weight-bold d-block text-muted">Tổng cộng :</span>
+                                </div>
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="d-block"></span>
+                                    <span class="d-block ml-5 font-weight-bold">$<span
+                                            class="total-price">900</span></span>
+                                    <i class="fa fa-trash-o ml-3 text-black-50"></i>
+                                </div>
+                            </div>
+                            <div class="cart-body">
+                                <div
+                                    class="cart-item d-flex flex-md-row justify-content-between align-items-center mt-3 p-2 rounded">
+                                    <div class="d-flex flex-row cart-left-item">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div
+                                            class="ml-3 d-flex flex-column align-self-center text-left font-weight-bold">
+                                            <span class="cart-item-title d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="d-block font-weight-bold small">Price: <span
+                                                    class="item-price">900</span> VND</span>
+                                            <span class="d-block font-weight-bold small">Total: <span
+                                                    class="item-total-price">900</span> VND</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center cart-right-item">
+                                        <span class="quantity-input d-flex" onchange="ChangeInputQuantity(event)">
+                                            <button type="button"
+                                                class="quantity-left-minus btn btn-light d-flex align-self-center"
+                                                onclick="ChangeQuantity(event);">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                            <input
+                                                class="cart-quantity-input text-muted bg-light text-center font-weight-bold rounded"
+                                                type="number" value="1">
+                                            <button type="button"
+                                                class="quantity-right-plus btn btn-light d-flex align-self-center"
+                                                onclick="ChangeQuantity(event);">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="remove-item">
+                                            <i class="icon-trash px-2 h5 text-black-50"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="cart-item d-flex flex-md-row justify-content-between align-items-center mt-3 p-2 rounded">
+                                    <div class="d-flex flex-row cart-left-item">
+                                        <img class="rounded cart-img" src="images/drink-2.jpg" alt="1" />
+                                        <div
+                                            class="ml-3 d-flex flex-column align-self-center text-left font-weight-bold">
+                                            <span class="cart-item-title d-block text-dark"> Iphone 11 pro </span>
+                                            <span class="d-block font-weight-bold small">Price: <span
+                                                    class="item-price">900</span> VND</span>
+                                            <span class="d-block font-weight-bold small">Total: <span
+                                                    class="item-total-price">900</span> VND</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center cart-right-item">
+                                        <span class="quantity-input d-flex" onchange="ChangeInputQuantity(event)">
+                                            <button type="button"
+                                                class="quantity-left-minus btn btn-light d-flex align-self-center"
+                                                onclick="ChangeQuantity(event);">
+                                                <i class="icon-minus"></i>
+                                            </button>
+                                            <input
+                                                class="cart-quantity-input text-muted bg-light text-center font-weight-bold rounded"
+                                                type="number" value="1">
+                                            <button type="button"
+                                                class="quantity-right-plus btn btn-light d-flex align-self-center"
+                                                onclick="ChangeQuantity(event);">
+                                                <i class="icon-plus"></i>
+                                            </button>
+                                        </span>
+                                        <span class="remove-item">
+                                            <i class="icon-trash px-2 h5 text-black-50"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <div class="d-flex justify-content-end align-items-center mt-3 rounded">
+                                    <button type="button"
+                                        class="btn btn-secondary close-footer font-weight-bold">Đóng</button>
+                                    <button type="button" class="ml-2 btn btn-primary order">Thanh Toán</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <!-- END nav -->
 
-						</div>
-						<br class="cart-total">
-						<strong class="cart-total-title">Tổng Cộng: </strong></br>
-						<!-- <span class="cart-total-price">Thanh tien: </span> -->
-					</div>
 
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary close-footer">Đóng</button>
-						<button type="button" class="btn btn-primary order">Thanh Toán</button>
-					</div>
-				</div>
-			</div>
-	</nav>
-	<!-- END nav -->
 
-	<div class="row">
-		<div class="history-item"
-			style="color: black; background-color: white; text-align: left; width: 300px;">
-			<div class="history-table-code" style="font-weight: bold; font-size: 14px;">
-				Table code : 001
-			</div>
-			<div class="date-price d-flex justify-content-between">
-				<div class="date-history" style="color: darkgrey; font-size: 10px;">
-					Date: 06/03/2023
-				</div>
-			</div>
-			<div class="status " style="background-color: cadetblue;">
-				<div class="progress-bar-wrapper">
-					<ul class="progressbar">
-						<li class="complete">Send</li>
-						<li class="complete">Receive</li>
-						<li class="active">Process</li>
-						<li>Done</li>
-					  </ul>
-				</div>
-			</div>
-			<div class="price" style="background-color: whitesmoke">
-				Total cost: 59.000đ
-			</div>
-			<div class="view d-flex justify-content-end p-2" style="background-color: white;">
-				<button class="btn btn btn-primary" style="color: white;">View/Comment</button>
-			</div>
-		</div>
-	</div>
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
 
-	<footer class="ftco-footer ftco-section img">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-lg-6 col-md-6 mb-5 mb-md-5">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About Us</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-	</footer>
 
-	<script>
-		$(document).ready(function () {
-			$('.owl-carousel2').owlCarousel();
-		});
-	</script>
+    <div class="container"  style="margin-top: 100px; overflow-y: auto; height: 800px; position: sticky;">
+        <!-- Test row -->
+        <div class="row p-3">
+            <div class="container">
+                <div class="historyRow row py-3 rounded text-left font-weight-bold">
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Table: <span class="total-cost text-dark">001</span></div>
+                        <div class="font-weight-light">Date: <span class="bill-date text-dark">03/06/2023 00:00:00</span></div>
+                    </section>
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Code: <span class="bill-date text-dark">1236065114</span></div>
+                        <div class="font-weight-light">Total cost: <span class="total-cost text-dark">10.000.000</span> đ</div>
+                    </section>
+                    <div class="col-12 progress-bar-wrapper my-3">
+                        <ul class="progressbar p-0 d-flex justify-content-center m-0">
+                            <li class="active">
+                                <i class="progress-icon icon-send"></i>
+                                <span>Send</span>
+                            </li>
+                            <li class="active">
+                                <i class="progress-icon h6 icon-get-pocket"></i>
+                                <span>Receive</span>
+                            </li>
+                            <li class="active">
+                                <i class="progress-icon h6 icon-local_cafe"></i>
+                                <span>In Progress</span>
+                            </li>
+                            <li class="active">
+                                <i class="progress-icon h6 ion-md-cloud-done"></i>
+                                <span>Done</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 view-comment d-flex justify-content-end">
+                        <button class="btn btn-secondary font-weight-bold">Comment</button>
+                        <button class="btn btn-primary ml-2">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="container">
+                <div class="historyRow row py-3 rounded text-left font-weight-bold">
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Table: <span class="total-cost text-dark">001</span></div>
+                        <div class="font-weight-light">Date: <span class="bill-date text-dark">03/06/2023 00:00:00</span></div>
+                    </section>
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Code: <span class="bill-date text-dark">1236065114</span></div>
+                        <div class="font-weight-light">Total cost: <span class="total-cost text-dark">10.000.000</span> đ</div>
+                    </section>
+                    <div class="col-12 progress-bar-wrapper my-3">
+                        <ul class="progressbar p-0 d-flex justify-content-center m-0">
+                            <li class="cancel">
+                                <i class="progress-icon icon-send"></i>
+                                <span>Send</span>
+                            </li>
+                            <li class="cancel">
+                                <i class="progress-icon h6 icon-get-pocket"></i>
+                                <span>Receive</span>
+                            </li>
+                            <li class="cancel">
+                                <i class="progress-icon h6 icon-cancel"></i>
+                                <span>Cancel</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 view-comment d-flex justify-content-end">
+                        <button class="btn btn-secondary font-weight-bold">Comment</button>
+                        <button class="btn btn-primary ml-2">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="container">
+                <div class="historyRow row py-3 rounded text-left font-weight-bold">
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Table: <span class="total-cost text-dark">001</span></div>
+                        <div class="font-weight-light">Date: <span class="bill-date text-dark">03/06/2023 00:00:00</span></div>
+                    </section>
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Code: <span class="bill-date text-dark">1236065114</span></div>
+                        <div class="font-weight-light">Total cost: <span class="total-cost text-dark">10.000.000</span> đ</div>
+                    </section>
+                    <div class="col-12 progress-bar-wrapper my-3">
+                        <ul class="progressbar p-0 d-flex justify-content-center m-0">
+                            <li class="active">
+                                <i class="progress-icon icon-send"></i>
+                                <span>Send</span>
+                            </li>
+                            <li class="active">
+                                <i class="progress-icon h6 icon-get-pocket"></i>
+                                <span>Receive</span>
+                            </li>
+                            <li >
+                                <i class="progress-icon h6 icon-local_cafe"></i>
+                                <span>In Progress</span>
+                            </li>
+                            <li >
+                                <i class="progress-icon h6 ion-md-cloud-done"></i>
+                                <span>Done</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 view-comment d-flex justify-content-end">
+                        <button class="btn btn-secondary font-weight-bold">Comment</button>
+                        <button class="btn btn-primary ml-2">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="container">
+                <div class="historyRow row py-3 rounded text-left font-weight-bold">
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Table: <span class="total-cost text-dark">001</span></div>
+                        <div class="font-weight-light">Date: <span class="bill-date text-dark">03/06/2023 00:00:00</span></div>
+                    </section>
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Code: <span class="bill-date text-dark">1236065114</span></div>
+                        <div class="font-weight-light">Total cost: <span class="total-cost text-dark">10.000.000</span> đ</div>
+                    </section>
+                    <div class="col-12 progress-bar-wrapper my-3">
+                        <ul class="progressbar p-0 d-flex justify-content-center m-0">
+                            <li class="active">
+                                <i class="progress-icon icon-send"></i>
+                                <span>Send</span>
+                            </li>
+                            <li class="active">
+                                <i class="progress-icon h6 icon-get-pocket"></i>
+                                <span>Receive</span>
+                            </li>
+                            <li >
+                                <i class="progress-icon h6 icon-local_cafe"></i>
+                                <span>In Progress</span>
+                            </li>
+                            <li >
+                                <i class="progress-icon h6 ion-md-cloud-done"></i>
+                                <span>Done</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 view-comment d-flex justify-content-end">
+                        <button class="btn btn-secondary font-weight-bold">Comment</button>
+                        <button class="btn btn-primary ml-2">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="container">
+                <div class="historyRow row py-3 rounded text-left font-weight-bold">
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Table: <span class="total-cost text-dark">001</span></div>
+                        <div class="font-weight-light">Date: <span class="bill-date text-dark">03/06/2023 00:00:00</span></div>
+                    </section>
+                    <section class="col-12 d-flex justify-content-between text-dark">
+                        <div>Code: <span class="bill-date text-dark">1236065114</span></div>
+                        <div class="font-weight-light">Total cost: <span class="total-cost text-dark">10.000.000</span> đ</div>
+                    </section>
+                    <div class="col-12 progress-bar-wrapper my-3">
+                        <ul class="progressbar p-0 d-flex justify-content-center m-0">
+                            <li class="active">
+                                <i class="progress-icon icon-send"></i>
+                                <span>Send</span>
+                            </li>
+                            <li class="active">
+                                <i class="progress-icon h6 icon-get-pocket"></i>
+                                <span>Receive</span>
+                            </li>
+                            <li >
+                                <i class="progress-icon h6 icon-local_cafe"></i>
+                                <span>In Progress</span>
+                            </li>
+                            <li >
+                                <i class="progress-icon h6 ion-md-cloud-done"></i>
+                                <span>Done</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 view-comment d-flex justify-content-end">
+                        <button class="btn btn-secondary font-weight-bold">Comment</button>
+                        <button class="btn btn-primary ml-2">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<script src="js/jsstyle.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/jquery.timepicker.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-	<script src="js/google-map.js"></script>
-	<script src="js/main.js"></script>
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
 
-	<script src="js/jsCodeHistoryBill.js"></script>
+    <footer class="ftco-footer ftco-section img">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-6 mb-5 mb-md-5">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About Us</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
 
-	<script src="js/processStep.Bar.js"></script>
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+    <script src="js/cart.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
